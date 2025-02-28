@@ -17,6 +17,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Image carousel functionality
+  const carouselItems = document.querySelectorAll('.carousel-item');
+  let currentIndex = 0;
+  
+  function rotateCarousel() {
+    // Remove active class from all items
+    carouselItems.forEach(item => {
+      item.classList.remove('active');
+    });
+    
+    // Add active class to next item
+    currentIndex = (currentIndex + 1) % carouselItems.length;
+    carouselItems[currentIndex].classList.add('active');
+  }
+  
+  // Set interval to rotate carousel every 3 seconds
+  setInterval(rotateCarousel, 3000);
+  
   // You can add more JavaScript functionality here
   console.log('JustCanvass marketing page loaded!');
 }); 
