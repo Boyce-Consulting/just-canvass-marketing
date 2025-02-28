@@ -16,6 +16,7 @@
     "sass": "^1.85.1"
   },
   "scripts": {
+    "start": "parcel src/index.html --open",
   "dev": "parcel src/index.html",
   "build": "parcel build src/index.html --public-url ./",
   "predeploy": "npm run build",
