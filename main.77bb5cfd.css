@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap");
 * {
   margin: 0;
@@ -121,6 +122,7 @@ section {
 .header .main-nav ul {
   display: none;
   list-style: none;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .header .main-nav ul {
@@ -136,6 +138,17 @@ section {
 }
 .header .main-nav a:hover {
   color: #ff6b35;
+}
+.header .main-nav a.nav-cta {
+  background-color: #ff6b35;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.header .main-nav a.nav-cta:hover {
+  background-color: rgb(255, 69.6336633663, 2);
+  color: white;
 }
 
 .btn {
@@ -269,6 +282,89 @@ section {
   border-radius: 24px;
 }
 
+.campaign-tool {
+  background-color: white;
+  padding: 4rem 0;
+}
+.campaign-tool h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.campaign-tool .tool-showcase {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 992px) {
+  .campaign-tool .tool-showcase {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.campaign-tool .tool-message {
+  padding: 3.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, white 0%, #f7c59f 100%);
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.campaign-tool .tool-message:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.campaign-tool .tool-message .tool-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.campaign-tool .tool-message h3 {
+  color: #2b2d42;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+.campaign-tool .tool-message p {
+  color: #2b2d42;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.campaign-tool .tool-message .tool-features {
+  display: inline-block;
+  list-style: none;
+  padding: 1.5rem 2rem;
+  margin: 0;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.campaign-tool .tool-message .tool-features li {
+  margin-bottom: 1rem;
+  color: #2b2d42;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.campaign-tool .tool-message .tool-features li:last-child {
+  margin-bottom: 0;
+}
+.campaign-tool .tool-message .tool-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ff6b35;
+  font-weight: bold;
+}
+.campaign-tool .tool-message:nth-child(2) {
+  background: linear-gradient(135deg, white 0%, rgb(255, 237.7821782178, 231.5) 100%);
+}
+
 .features {
   background-color: white;
 }
@@ -306,68 +402,71 @@ section {
   transition: transform 0.3s ease;
 }
 
-.pricing {
-  background-color: #f8f9fa;
+.alberta-focus {
+  background: linear-gradient(135deg, #f8f9fa 0%, white 100%);
+  padding: 6rem 0;
 }
-.pricing .pricing-card {
-  max-width: 500px;
-  margin: 0 auto;
+.alberta-focus .cities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+@media (min-width: 768px) {
+  .alberta-focus .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.alberta-focus .city-card {
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.pricing .pricing-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-.pricing .pricing-card .pricing-header {
-  background: linear-gradient(135deg, #ff6b35 0%, #e84855 100%);
-  color: white;
   padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
-.pricing .pricing-card .pricing-header h3 {
+.alberta-focus .city-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+.alberta-focus .city-card .city-icon {
+  font-size: 3.5rem;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
 }
-.pricing .pricing-card .pricing-header .price .amount {
-  font-size: 3rem;
-  font-weight: 700;
+.alberta-focus .city-card h3 {
+  color: #ff6b35;
+  margin-bottom: 1rem;
 }
-.pricing .pricing-card .pricing-header .price .period {
-  font-size: 1.2rem;
-  opacity: 0.8;
+.alberta-focus .city-card p {
+  margin-bottom: 1.5rem;
 }
-.pricing .pricing-card .pricing-features {
-  padding: 2rem;
+.alberta-focus .city-card .features-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: left;
 }
-.pricing .pricing-card .pricing-features ul {
+.alberta-focus .city-card .city-features {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.pricing .pricing-card .pricing-features ul li {
+.alberta-focus .city-card .city-features li {
+  margin-bottom: 0.5rem;
+  color: #2b2d42;
+}
+.alberta-focus .city-card .city-features li:first-child {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.alberta-focus .alberta-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+.alberta-focus .alberta-cta p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
-}
-.pricing .pricing-card .pricing-features ul li .check {
-  color: #ff6b35;
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-.pricing .pricing-card .pricing-cta {
-  padding: 0 2rem 1.5rem;
-  text-align: center;
-}
-.pricing .pricing-card .pricing-cta .btn {
-  width: 100%;
-  padding: 1rem;
-}
-.pricing .pricing-card .pricing-note {
-  text-align: center;
-  padding-bottom: 2rem;
-  font-size: 0.9rem;
-  color: rgb(104.8348623853, 109.3853211009, 157.1651376147);
 }
 
 .testimonials {
