@@ -242,6 +242,103 @@
   }
 }
 
+// Campaign Tool section
+.campaign-tool {
+    background-color: white;
+    padding: 4rem 0;
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .tool-showcase {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        
+        @media (min-width: $breakpoint-lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    .tool-message {
+        padding: 3.5rem;
+        border-radius: 12px;
+        background: linear-gradient(135deg, white 0%, $secondary-color 100%);
+        text-align: center;
+        transition: transform 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .tool-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h3 {
+            color: $dark-color;
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+        }
+        
+        p {
+            color: $dark-color;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .tool-features {
+            display: inline-block;
+            list-style: none;
+            padding: 1.5rem 2rem;
+            margin: 0;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            
+            li {
+                margin-bottom: 1rem;
+                color: $dark-color;
+                font-size: 1.15rem;
+                font-weight: 500;
+                padding-left: 1.5rem;
+                position: relative;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                
+                // Single checkmark using pseudo-element
+                &:before {
+                    content: "✓";
+                    position: absolute;
+                    left: 0;
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+        // Add different gradient for second card
+        &:nth-child(2) {
+            background: linear-gradient(135deg, white 0%, color.adjust($primary-color, $lightness: 35%) 100%);
+        }
+    }
+}
+
 // Features section
 .features {
   background-color: white;
