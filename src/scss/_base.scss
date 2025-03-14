@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'sass:color';
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
 
 * {
@@ -52,7 +55,7 @@ a {
   transition: color 0.3s ease;
   
   &:hover {
-    color: darken($primary-color, 10%);
+    color: color.adjust($primary-color, $lightness: -10%);
   }
 }
 

@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'sass:color';
+
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -55,6 +58,7 @@
     ul {
       display: none;
       list-style: none;
+      align-items: center;
       
       @media (min-width: $breakpoint-md) {
         display: flex;
@@ -71,6 +75,19 @@
       
       &:hover {
         color: $primary-color;
+      }
+      
+      &.nav-cta {
+        background-color: $primary-color;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+          background-color: color.adjust($primary-color, $lightness: -10%);
+          color: white;
+        }
       }
     }
   }
@@ -91,7 +108,7 @@
     color: white;
     
     &:hover {
-      background-color: darken($primary-color, 10%);
+      background-color: color.adjust($primary-color, $lightness: -10%);
       color: white;
     }
   }
@@ -110,7 +127,7 @@
 
 // Hero section
 .hero {
-  background: linear-gradient(135deg, $secondary-color 0%, lighten($primary-color, 20%) 100%);
+  background: linear-gradient(135deg, $secondary-color 0%, color.adjust($primary-color, $lightness: 20%) 100%);
   padding: 6rem 0;
   
   .container {
@@ -266,82 +283,81 @@
   }
 }
 
-// Pricing section
-.pricing {
-  background-color: $light-color;
+// Alberta Focus section
+.alberta-focus {
+  background: linear-gradient(135deg, $light-color 0%, white 100%);
+  padding: 6rem 0;
   
-  .pricing-card {
-    max-width: 500px;
-    margin: 0 auto;
+  .cities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+    
+    @media (min-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .city-card {
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
     
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
     }
     
-    .pricing-header {
-      background: linear-gradient(135deg, $primary-color 0%, $accent-color 100%);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      
-      h3 {
-        margin-bottom: 1rem;
-        font-size: 1.8rem;
-      }
-      
-      .price {
-        .amount {
-          font-size: 3rem;
-          font-weight: 700;
-        }
-        
-        .period {
-          font-size: 1.2rem;
-          opacity: 0.8;
-        }
-      }
+    .city-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
     }
     
-    .pricing-features {
-      padding: 2rem;
+    h3 {
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .features-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: left;
+    }
+    
+    .city-features {
+      list-style: none;
+      margin: 0;
+      padding: 0;
       
-      ul {
-        list-style: none;
+      li {
+        margin-bottom: 0.5rem;
+        color: $dark-color;
         
-        li {
+        &:first-child {
+          font-weight: 600;
           margin-bottom: 1rem;
-          font-size: 1.1rem;
-          
-          .check {
-            color: $primary-color;
-            font-weight: bold;
-            margin-right: 0.5rem;
-          }
         }
       }
     }
+  }
+  
+  .alberta-cta {
+    text-align: center;
+    margin-top: 3rem;
     
-    .pricing-cta {
-      padding: 0 2rem 1.5rem;
-      text-align: center;
-      
-      .btn {
-        width: 100%;
-        padding: 1rem;
-      }
-    }
-    
-    .pricing-note {
-      text-align: center;
-      padding-bottom: 2rem;
-      font-size: 0.9rem;
-      color: lighten($dark-color, 30%);
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
     }
   }
 }
@@ -424,7 +440,7 @@
       
       .author-title {
         font-size: 0.9rem;
-        color: lighten($dark-color, 30%);
+        color: color.adjust($dark-color, $lightness: 30%);
       }
     }
   }
