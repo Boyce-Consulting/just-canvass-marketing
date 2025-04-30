@@ -582,4 +582,66 @@ section {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.canadian-text {
+  position: relative;
+}
+.canadian-text .maple-leaf-ca {
+  font-size: 0.9em;
+  color: #d80621;
+  position: relative;
+  top: -0.05em;
+}
+
+.stats-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+.stats-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2b2d42;
+}
+.stats-section .stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .stats-section .stats-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.stats-section .stat-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stats-section .stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.stats-section .stat-card .stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.stats-section .stat-card h3 {
+  color: #2b2d42;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.stats-section .stat-card .stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6b35;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
