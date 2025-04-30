@@ -12,21 +12,39 @@
             <div class="logo"><span class="maple-leaf">🍁</span> JustCanvass</div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#alberta-focus">Alberta</a></li>
                     <li><a href="#features">Key Features</a></li>
-                    <li><a href="#stats">Platform Stats</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1>Revolutionize Your Campaign's Ground Game</h1>
                 <p>JustCanvass helps political campaigns connect with voters more effectively through intuitive mobile canvassing tools.</p>
+                
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <h3>Doors Knocked</h3>
+                        <div class="stat-value" id="total-interactions">Loading...</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <h3>Conversations</h3>
+                        <div class="stat-value" id="answered-interactions">Loading...</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <h3>Unique Candidates</h3>
+                        <div class="stat-value" id="unique-candidates">Loading...</div>
+                    </div>
+                </div>
+                
                 <div class="cta-buttons">
                     <!-- <a href="#" class="btn btn-primary">Get Started</a>
                     <a href="https://app.justcanvass.com/demo" class="btn btn-secondary">Try Demo Campaign</a> -->
@@ -209,87 +227,14 @@
         </div>
     </section>
 
-    <section id="stats" class="stats-section">
-        <div class="container">
-            <h2>Platform Statistics</h2>
-            <div class="stats-row">
-                <div class="stat-card">
-                    <div class="stat-icon">📊</div>
-                    <h3>Doors Knocked</h3>
-                    <div class="stat-value" id="total-interactions">Loading...</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">✅</div>
-                    <h3>Conversations</h3>
-                    <div class="stat-value" id="answered-interactions">Loading...</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">👥</div>
-                    <h3>Unique Candidates</h3>
-                    <div class="stat-value" id="unique-candidates">Loading...</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Then comment out the entire testimonials section -->
-    <!-- 
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>Trusted by City Council Candidates</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"JustCanvass transformed how we ran our council campaign. The pre-loaded districts saved us weeks of preparation time, and the mobile interface made it easy to onboard volunteers quickly."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-name">Tracey Giroux</div>
-                        <div class="author-title">City Council Candidate</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The role-based access control is a game-changer for our ward campaign. I can give volunteers exactly the access they need without worrying about data security. The activity organization feature keeps everyone on task."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-name">Jon Morgan</div>
-                        <div class="author-title">City Council Candidate</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"As a first-time council candidate, I appreciate how JustCanvass makes analytics accessible. The real-time synchronization means our team always has the most current information as we canvas neighborhoods."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-name">Giselle General</div>
-                        <div class="author-title">City Council Candidate</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"The mobile-first design makes a huge difference when you're out in the field. Our volunteers love how intuitive it is, and the mapping features help them navigate efficiently through our ward."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-name">Jason Bale</div>
-                        <div class="author-title">City Council Candidate</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">JustCanvass</div>
                 <div class="footer-links">
                     <h4>Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#alberta-focus">Alberta</a></li>
                         <li><a href="#features">Key Features</a></li>
                         <!-- <li><a href="#testimonials">Testimonials</a></li> -->
