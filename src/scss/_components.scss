@@ -590,4 +590,75 @@
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
+}
+
+// Add this to your _components.scss file
+.canadian-text {
+  position: relative;
+  
+  .maple-leaf-ca {
+    font-size: 0.9em;
+    color: #d80621; // Canadian red
+    position: relative;
+    top: -0.05em;
+  }
+}
+
+// Stats Section styles
+.stats-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: $dark-color;
+  }
+  
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .stat-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+    
+    .stat-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    
+    h3 {
+      color: $dark-color;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+    
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
 } 

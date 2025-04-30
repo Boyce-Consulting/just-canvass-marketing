@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url ./",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./ && cp src/CNAME dist/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,12 +17,5 @@
     "gh-pages": "^6.3.0",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.85.1"
-  },
-  "scripts": {
-    "start": "parcel src/index.html --open",
-  "dev": "parcel src/index.html",
-  "build": "parcel build src/index.html --public-url ./",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
+  }
 }

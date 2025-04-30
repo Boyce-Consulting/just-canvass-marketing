@@ -12,10 +12,11 @@
             <div class="logo"><span class="maple-leaf">🍁</span> JustCanvass</div>
             <nav class="main-nav">
                 <ul>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#alberta-focus">Alberta</a></li>
                     <li><a href="#features">Key Features</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="https://app.justcanvass.com/demo" class="nav-cta">Try Demo</a></li>
+                    <li><a href="#stats">Platform Stats</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,8 +28,8 @@
                 <h1>Revolutionize Your Campaign's Ground Game</h1>
                 <p>JustCanvass helps political campaigns connect with voters more effectively through intuitive mobile canvassing tools.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">Get Started</a>
-                    <a href="https://app.justcanvass.com/demo" class="btn btn-secondary">Try Demo Campaign</a>
+                    <!-- <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="https://app.justcanvass.com/demo" class="btn btn-secondary">Try Demo Campaign</a> -->
                 </div>
             </div>
             <div class="hero-image">
@@ -87,9 +88,9 @@
                 <div class="tool-message">
                     <div class="tool-icon">🎯</div>
                     <h3>No Voter List? No Problem</h3>
-                    <p>Start canvassing immediately with accurate property data. Build your voter database as you meet residents.</p>
+                    <p>Start canvassing immediately with accurate address data. Build your voter database as you meet residents.</p>
                     <ul class="tool-features">
-                        <li>Every house pre-loaded from tax data</li>
+                        <li>Every house pre-loaded for your district</li>
                         <li>No incorrect addresses or missing homes</li>
                         <li>Record interactions as you go</li>
                         <li>Build your database organically</li>
@@ -110,7 +111,7 @@
                     <div class="features-columns">
                         <ul class="city-features">
                             <li>✓ Pre-loaded Data:</li>
-                            <li>• All houses</li>
+                            <li>• All houses pre-loaded</li>
                             <li>• Neighbourhoods</li>
                             <li>• Federal Polling</li>
                             <li>• Historical Election Data</li>
@@ -136,7 +137,7 @@
                     <div class="features-columns">
                         <ul class="city-features">
                             <li>✓ Pre-loaded Data:</li>
-                            <li>• All houses</li>
+                            <li>• All houses pre-loaded</li>
                             <li>• Neighbourhoods</li>
                             <li>• Federal Polling</li>
                             <li>• Historical Election Data</li>
@@ -201,13 +202,38 @@
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">🇨🇦</div>
-                    <h3>Proudly Canadian</h3>
+                    <h3>Proudly <span class="canadian-text">Canadian</span></h3>
                     <p>Built in Canada, for Canadian campaigns, with local expertise and support.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2>Platform Statistics</h2>
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <h3>Doors Knocked</h3>
+                    <div class="stat-value" id="total-interactions">Loading...</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <h3>Conversations</h3>
+                    <div class="stat-value" id="answered-interactions">Loading...</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <h3>Unique Candidates</h3>
+                    <div class="stat-value" id="unique-candidates">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Then comment out the entire testimonials section -->
+    <!-- 
     <section id="testimonials" class="testimonials">
         <div class="container">
             <h2>Trusted by City Council Candidates</h2>
@@ -254,6 +280,7 @@
             </div>
         </div>
     </section>
+    -->
 
     <footer class="footer">
         <div class="container">
@@ -263,8 +290,9 @@
                     <h4>Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#alberta-focus">Alberta</a></li>
+                        <li><a href="#features">Key Features</a></li>
+                        <!-- <li><a href="#testimonials">Testimonials</a></li> -->
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -275,11 +303,36 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 JustCanvass. All rights reserved.</p>
+                <p>&copy; 2024 JustCanvass. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="./js/main.js"></script>
+    <script>
+        // Format number with commas
+        function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        // Fetch statistics from API
+        fetch('https://api.justcanvas.ca/api/public/stat')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('total-interactions').textContent = formatNumber(data.data.total_interactions);
+                    document.getElementById('answered-interactions').textContent = formatNumber(data.data.answered_interactions);
+                    document.getElementById('unique-candidates').textContent = formatNumber(data.data.unique_candidates);
+                } else {
+                    console.error('Failed to load statistics');
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching statistics:', error);
+                document.getElementById('total-interactions').textContent = 'Error loading data';
+                document.getElementById('answered-interactions').textContent = 'Error loading data';
+                document.getElementById('unique-candidates').textContent = 'Error loading data';
+            });
+    </script>
 </body>
 </html> 
