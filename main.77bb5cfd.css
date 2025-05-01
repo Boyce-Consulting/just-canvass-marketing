@@ -192,6 +192,71 @@ section {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  .hero .container {
+    display: grid;
+    grid-template-areas: "hero-content" "hero-image" "hero-stats";
+  }
+  .hero .container .hero-content {
+    grid-area: hero-content;
+  }
+  .hero .container .hero-content .stats-row {
+    display: none;
+  }
+  .hero .container .hero-image {
+    grid-area: hero-image;
+    margin-bottom: 2rem;
+  }
+  .hero .container .hero-stats {
+    grid-area: hero-stats;
+    display: block;
+  }
+}
+.hero .hero-stats {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hero .hero-stats {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+.hero .hero-stats .stats-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hero .hero-stats .stats-row .stat-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hero .hero-stats .stats-row .stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.hero .hero-stats .stats-row .stat-card .stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+}
+.hero .hero-stats .stats-row .stat-card h3 {
+  color: #2b2d42;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+.hero .hero-stats .stats-row .stat-card .stat-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ff6b35;
+}
 .hero .hero-content {
   margin-bottom: 2rem;
   animation: fadeIn 1s ease-out;
@@ -221,12 +286,6 @@ section {
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 2rem;
-}
-@media (max-width: 768px) {
-  .hero .hero-content .stats-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 .hero .hero-content .stats-row .stat-card {
   background-color: rgba(255, 255, 255, 0.9);
