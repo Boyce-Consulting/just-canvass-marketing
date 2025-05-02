@@ -29,7 +29,7 @@
                 
                 <div class="stats-row">
                     <div class="stat-card">
-                        <div class="stat-icon">📊</div>
+                        <div class="stat-icon">🚪</div>
                         <h3>Doors Knocked</h3>
                         <div class="stat-value" id="total-interactions">Loading...</div>
                     </div>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">👥</div>
-                        <h3>Unique Candidates</h3>
+                        <h3>Candidates</h3>
                         <div class="stat-value" id="unique-candidates">Loading...</div>
                     </div>
                 </div>
@@ -81,6 +81,25 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-icon">🚪</div>
+                        <h3>Doors Knocked</h3>
+                        <div class="stat-value" id="mobile-total-interactions">Loading...</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <h3>Conversations</h3>
+                        <div class="stat-value" id="mobile-answered-interactions">Loading...</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <h3>Candidates</h3>
+                        <div class="stat-value" id="mobile-unique-candidates">Loading...</div>
                     </div>
                 </div>
             </div>
@@ -265,18 +284,32 @@
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
+                    // Update desktop version
                     document.getElementById('total-interactions').textContent = formatNumber(data.data.total_interactions);
                     document.getElementById('answered-interactions').textContent = formatNumber(data.data.answered_interactions);
                     document.getElementById('unique-candidates').textContent = formatNumber(data.data.unique_candidates);
+                    
+                    // Update mobile version
+                    document.getElementById('mobile-total-interactions').textContent = formatNumber(data.data.total_interactions);
+                    document.getElementById('mobile-answered-interactions').textContent = formatNumber(data.data.answered_interactions);
+                    document.getElementById('mobile-unique-candidates').textContent = formatNumber(data.data.unique_candidates);
                 } else {
                     console.error('Failed to load statistics');
                 }
             })
             .catch(error => {
                 console.error('Error fetching statistics:', error);
-                document.getElementById('total-interactions').textContent = 'Error loading data';
-                document.getElementById('answered-interactions').textContent = 'Error loading data';
-                document.getElementById('unique-candidates').textContent = 'Error loading data';
+                const errorMessage = 'Error loading data';
+                
+                // Desktop version
+                document.getElementById('total-interactions').textContent = errorMessage;
+                document.getElementById('answered-interactions').textContent = errorMessage;
+                document.getElementById('unique-candidates').textContent = errorMessage;
+                
+                // Mobile version
+                document.getElementById('mobile-total-interactions').textContent = errorMessage;
+                document.getElementById('mobile-answered-interactions').textContent = errorMessage;
+                document.getElementById('mobile-unique-candidates').textContent = errorMessage;
             });
     </script>
 </body>

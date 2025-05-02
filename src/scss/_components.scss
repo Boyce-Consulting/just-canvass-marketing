@@ -138,6 +138,87 @@
       flex-direction: row;
       align-items: center;
     }
+    
+    @media (max-width: $breakpoint-md) {
+      // For mobile: reorder content so stats appear after phone
+      display: grid;
+      grid-template-areas: 
+        "hero-content"
+        "hero-image"
+        "hero-stats";
+        
+      .hero-content {
+        grid-area: hero-content;
+        
+        // Move stats out of hero-content on mobile
+        .stats-row {
+          display: none;
+        }
+      }
+      
+      .hero-image {
+        grid-area: hero-image;
+        margin-bottom: 2rem;
+      }
+      
+      // New container for stats on mobile
+      .hero-stats {
+        grid-area: hero-stats;
+        display: block;
+      }
+    }
+  }
+  
+  // New mobile-specific stats container
+  .hero-stats {
+    display: none; // Hidden by default on desktop
+    
+    @media (max-width: $breakpoint-md) {
+      display: block;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    .stats-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      
+      .stat-card {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        padding: 2rem;
+        text-align: center;
+        width: 80%;
+        max-width: 320px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .stat-icon {
+          font-size: 2.5rem;
+          margin-bottom: 0.8rem;
+          display: inline-block;
+        }
+        
+        h3 {
+          color: $dark-color;
+          margin-bottom: 0.8rem;
+          font-size: 1.4rem;
+        }
+        
+        .stat-value {
+          font-size: 2.8rem;
+          font-weight: 700;
+          color: $primary-color;
+        }
+      }
+    }
   }
   
   .hero-content {
@@ -165,7 +246,7 @@
       gap: 1rem;
     }
     
-    // Stats row inside hero section
+    // Stats row inside hero section - desktop only
     .stats-row {
       display: flex;
       flex-wrap: wrap;
@@ -174,8 +255,8 @@
       margin-bottom: 2rem;
       
       @media (max-width: $breakpoint-md) {
-        flex-direction: column;
-        align-items: flex-start;
+        // These styles will no longer apply as we're hiding this on mobile
+        // and showing the new hero-stats section instead
       }
       
       .stat-card {
