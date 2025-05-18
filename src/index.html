@@ -16,6 +16,7 @@
                     <li><a href="#alberta-focus">Alberta</a></li>
                     <li><a href="#features">Key Features</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="login-item"><a href="https://app.justcanvass.ca" class="nav-cta" target="_blank" rel="noopener noreferrer">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -263,7 +264,6 @@
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
                     <p>Email: info@justcanvass.com</p>
-                    <p>Phone: (555) 123-4567</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -280,7 +280,7 @@
         }
 
         // Fetch statistics from API
-        fetch('https://api.justcanvas.ca/api/public/stat')
+        fetch('https://api.justcanvass.ca/api/public/stat')
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
