@@ -285,12 +285,12 @@
             .then(data => {
                 if (data.success) {
                     // Update desktop version
-                    document.getElementById('total-interactions').textContent = formatNumber(data.data.total_interactions);
+                    document.getElementById('total-interactions').textContent = formatNumber(data.data.total_doorknocks);
                     document.getElementById('answered-interactions').textContent = formatNumber(data.data.answered_interactions);
                     document.getElementById('unique-candidates').textContent = formatNumber(data.data.unique_candidates);
                     
                     // Update mobile version
-                    document.getElementById('mobile-total-interactions').textContent = formatNumber(data.data.total_interactions);
+                    document.getElementById('mobile-total-interactions').textContent = formatNumber(data.data.total_doorknocks);
                     document.getElementById('mobile-answered-interactions').textContent = formatNumber(data.data.answered_interactions);
                     document.getElementById('mobile-unique-candidates').textContent = formatNumber(data.data.unique_candidates);
                 } else {
