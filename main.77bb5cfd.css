@@ -262,14 +262,10 @@ section {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
-.hero .hero-stats .stats-row .stat-card:hover .stat-icon {
-  transform: scale(1.1);
-}
 .hero .hero-stats .stats-row .stat-card .stat-icon {
   font-size: 2.5rem;
   margin-bottom: 0.8rem;
   display: inline-block;
-  transition: transform 0.3s ease;
 }
 .hero .hero-stats .stats-row .stat-card h3 {
   color: #2b2d42;
@@ -282,8 +278,8 @@ section {
   color: #ff6b35;
 }
 .hero .hero-stats .stats-row .stat-card .stat-breakdown {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 0.9rem;
+  color: #666;
   margin-top: 0.5rem;
   line-height: 1.3;
 }
@@ -321,7 +317,7 @@ section {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
+  padding: 1.2rem;
   text-align: center;
   flex: 1;
   min-width: 100px;
@@ -332,14 +328,10 @@ section {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
-.hero .hero-content .stats-row .stat-card:hover .stat-icon {
-  transform: scale(1.1);
-}
 .hero .hero-content .stats-row .stat-card .stat-icon {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   display: inline-block;
-  transition: transform 0.3s ease;
 }
 .hero .hero-content .stats-row .stat-card h3 {
   color: #2b2d42;
@@ -352,8 +344,8 @@ section {
   color: #ff6b35;
 }
 .hero .hero-content .stats-row .stat-card .stat-breakdown {
-  font-size: 0.8rem;
-  color: #555;
+  font-size: 0.75rem;
+  color: #666;
   margin-top: 0.3rem;
   line-height: 1.2;
 }
