@@ -7,6 +7,12 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://app.justcanvass.ca/</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://www.justcanvass.ca/#alberta-focus</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>monthly</changefreq>
