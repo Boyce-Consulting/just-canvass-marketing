@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://justcanvass.ca/sitemap.xml
+Sitemap: https://www.justcanvass.ca/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1 
