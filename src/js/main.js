@@ -36,5 +36,5 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(rotateCarousel, 3000);
   
   // You can add more JavaScript functionality here
-  console.log('JustCanvass marketing page loaded!');
+  console.log('Just Canvass marketing page loaded!');
 }); 
