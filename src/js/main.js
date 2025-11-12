@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Set interval to rotate carousel every 3 seconds
   setInterval(rotateCarousel, 3000);
   
+  // Update copyright year
+  const copyrightYear = document.getElementById('copyright-year');
+  if (copyrightYear) {
+    copyrightYear.textContent = new Date().getFullYear();
+  }
+
   // You can add more JavaScript functionality here
   console.log('Just Canvass marketing page loaded!');
 }); 
