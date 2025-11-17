@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./ && copy src\\CNAME dist\\ && copy src\\sitemap.xml dist\\ && copy src\\robots.txt dist\\",
+    "dev": "parcel src/index.html src/policies/*.html",
+    "build": "parcel build src/index.html src/policies/*.html --public-url / && copy src\\CNAME dist\\ && copy src\\sitemap.xml dist\\ && copy src\\robots.txt dist\\",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
