@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:app.justcanvass.ca)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_run_code",
+      "Bash(curl:*)",
+      "Bash(npm run:*)",
+      "WebSearch",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:brandfetch.com)",
+      "WebFetch(domain:quo.vote)",
+      "WebFetch(domain:en.m.wikipedia.org)",
+      "WebFetch(domain:help.gohighlevel.com)",
+      "WebFetch(domain:seeklogo.com)",
+      "WebFetch(domain:cdn.brandfetch.io)",
+      "WebFetch(domain:nationbuilder.com)",
+      "WebFetch(domain:callhub.io)",
+      "WebFetch(domain:marketing.gohighlevel.com)",
+      "WebFetch(domain:gohighlevel.com)",
+      "WebFetch(domain:swag.gohighlevel.com)",
+      "WebFetch(domain:www.quo.vote)"
+    ]
+  }
+}

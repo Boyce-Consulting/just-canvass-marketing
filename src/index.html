@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Canvass - Political Canvassing App for Alberta Municipal Elections</title>
-    <meta name="description" content="Professional digital canvassing app for Alberta municipal elections. Door-to-door campaign tools, voter outreach, and real-time analytics for independent candidates in Edmonton, Calgary, and surrounding areas.">
-    <meta name="keywords" content="political canvassing, Alberta municipal elections, campaign app, voter outreach, Edmonton elections, Calgary elections, digital canvassing, political campaign tools">
+    <title>Just Canvass - Political Canvassing App for Canadian Municipal Elections</title>
+    <meta name="description" content="Professional digital canvassing app for Canadian municipal elections. Door-to-door campaign tools, phonebanking, text blasts, email campaigns, and real-time analytics for independent candidates across BC, Ontario, and Manitoba.">
+    <meta name="keywords" content="political canvassing, Canadian municipal elections, campaign app, voter outreach, BC elections, Ontario elections, Manitoba elections, digital canvassing, political campaign tools, phonebanking, text blasts">
     <meta name="author" content="Just Canvass">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.justcanvass.ca">
@@ -13,8 +13,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.justcanvass.ca">
-    <meta property="og:title" content="Just Canvass - Political Canvassing App for Alberta Municipal Elections">
-    <meta property="og:description" content="Professional digital canvassing app for Alberta municipal elections. Door-to-door campaign tools, voter outreach, and real-time analytics for independent candidates.">
+    <meta property="og:title" content="Just Canvass - Political Canvassing App for Canadian Municipal Elections">
+    <meta property="og:description" content="Professional digital canvassing app for Canadian municipal elections. Door-to-door campaign tools, phonebanking, text blasts, and real-time analytics for independent candidates.">
     <meta property="og:image" content="https://www.justcanvass.ca/assets/images/screenshots/dashboard.png">
     <meta property="og:locale" content="en_CA">
     <meta property="og:site_name" content="Just Canvass">
@@ -22,32 +22,82 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.justcanvass.ca">
-    <meta property="twitter:title" content="Just Canvass - Political Canvassing App for Alberta Municipal Elections">
-    <meta property="twitter:description" content="Professional digital canvassing app for Alberta municipal elections. Door-to-door campaign tools, voter outreach, and real-time analytics for independent candidates.">
+    <meta property="twitter:title" content="Just Canvass - Political Canvassing App for Canadian Municipal Elections">
+    <meta property="twitter:description" content="Professional digital canvassing app for Canadian municipal elections. Door-to-door campaign tools, phonebanking, text blasts, and real-time analytics for independent candidates.">
     <meta property="twitter:image" content="https://www.justcanvass.ca/assets/images/screenshots/dashboard.png">
     
     <!-- Geo tags for local SEO -->
-    <meta name="geo.region" content="CA-AB">
-    <meta name="geo.placename" content="Alberta, Canada">
-    <meta name="geo.position" content="53.9333;-116.5765">
-    <meta name="ICBM" content="53.9333, -116.5765">
+    <meta name="geo.region" content="CA">
+    <meta name="geo.placename" content="Canada">
+    <meta name="geo.position" content="56.1304;-106.3468">
+    <meta name="ICBM" content="56.1304, -106.3468">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon.svg">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     
     <link rel="stylesheet" href="./scss/main.scss">
     
-    <!-- Structured Data -->
+    <!-- Structured Data - WebSite (helps Google generate sitelinks) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Just Canvass",
+      "url": "https://www.justcanvass.ca",
+      "description": "Professional digital canvassing app for Canadian municipal elections"
+    }
+    </script>
+
+    <!-- Structured Data - SiteNavigationElement (sitelink hints for Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Login",
+          "description": "Sign in to the Just Canvass campaign dashboard",
+          "url": "https://app.justcanvass.ca"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Features",
+          "description": "Canvassing, phonebanking, text blasts, email campaigns, and analytics tools",
+          "url": "https://www.justcanvass.ca/#features"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Contact",
+          "description": "Get in touch with the Just Canvass team",
+          "url": "https://www.justcanvass.ca/#contact"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Coverage",
+          "description": "Municipal election coverage across BC, Ontario, Manitoba, and Alberta",
+          "url": "https://www.justcanvass.ca/#canada-focus"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Privacy Policy",
+          "description": "Just Canvass privacy policy and data handling practices",
+          "url": "https://www.justcanvass.ca/policies/privacy-policy.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Structured Data - SoftwareApplication -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "Just Canvass",
-      "description": "Professional digital canvassing app for Alberta municipal elections with door-to-door campaign tools and voter outreach features",
-             "url": "https://www.justcanvass.ca",
-       "applicationCategory": "Political Campaign Software",
+      "description": "Professional digital canvassing app for Canadian municipal elections with door-to-door campaign tools, phonebanking, text blasts, and voter outreach features",
+      "url": "https://www.justcanvass.ca",
+      "applicationCategory": "Political Campaign Software",
       "operatingSystem": "Web, iOS, Android",
       "offers": {
         "@type": "Offer",
@@ -59,22 +109,23 @@
         "name": "Just Canvass",
         "url": "https://www.justcanvass.ca",
         "email": "tyson@justcanvass.ca",
+        "telephone": "+1-780-965-1195",
         "areaServed": {
-          "@type": "State",
-          "name": "Alberta",
-          "containedInPlace": {
-            "@type": "Country",
-            "name": "Canada"
-          }
+          "@type": "Country",
+          "name": "Canada"
         }
       },
       "featureList": [
         "Digital door-to-door canvassing",
+        "Phonebanking",
+        "Text blasts",
+        "Email campaigns",
         "Voter database management",
         "Real-time campaign analytics",
         "Mobile-first design",
         "Team coordination tools",
-        "Pre-loaded district data"
+        "Pre-loaded district data",
+        "Sign management"
       ]
     }
     </script>
@@ -96,8 +147,9 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#alberta-focus">Alberta</a></li>
+                    <li><a href="#canada-focus">Coverage</a></li>
                     <li><a href="#features">Key Features</a></li>
+                    <li><a href="#integrations">Integrations</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li class="login-item"><a href="https://app.justcanvass.ca" class="nav-cta" target="_blank" rel="noopener noreferrer">Login</a></li>
                 </ul>
@@ -110,7 +162,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Revolutionize Your Ground Game</h1>
-                    <p>The leading doorknocking app for Albertan municipal elections. Supporter Identification, Text blasts, Sign tracking, GOTV and more for your campaign.</p>
+                    <p>The leading campaign app for Canadian municipal elections. Canvassing, Phonebanking, Text blasts, Email campaigns, and more for your campaign.</p>
                 
                 <div class="stats-row">
                     <div class="stat-card">
@@ -197,6 +249,77 @@
         </div>
         </section>
 
+        <section class="core-features">
+            <div class="container">
+                <div class="core-features-grid">
+                    <article class="core-feature-item">
+                        <div class="core-feature-icon">🚪</div>
+                        <h3>Canvassing</h3>
+                        <p>Door-to-door voter outreach with real-time mapping, instant sync, and live team member tracking.</p>
+                    </article>
+                    <article class="core-feature-item">
+                        <div class="core-feature-icon">📞</div>
+                        <h3>Phonebanking</h3>
+                        <p>Reach voters by personal phone or VOIP with integrated calling tools, scripts, and automatic response tracking.</p>
+                        <ul class="feature-pricing">
+                            <li>VOIP $0.03/min</li>
+                            <li>Number $5/mo</li>
+                            <li>Call forwarding incl.</li>
+                        </ul>
+                    </article>
+                    <article class="core-feature-item">
+                        <div class="core-feature-icon">💬</div>
+                        <h3>Text Blasts</h3>
+                        <p>Send targeted SMS campaigns to supporters with personalized messaging and delivery analytics.</p>
+                        <ul class="feature-pricing">
+                            <li>SMS $0.03/seg</li>
+                            <li>MMS $0.08/seg</li>
+                        </ul>
+                    </article>
+                    <article class="core-feature-item">
+                        <div class="core-feature-icon">📧</div>
+                        <h3>Email Blasts</h3>
+                        <p>Create and send professional email campaigns to your voter database with tracking and segmentation.</p>
+                    </article>
+                    <article class="core-feature-item">
+                        <div class="core-feature-icon">📊</div>
+                        <h3>Historical Results &amp; Census</h3>
+                        <p>Access provincial and federal election results plus census demographics to understand voting patterns and target outreach.</p>
+                    </article>
+                    <article class="core-feature-item">
+                        <div class="core-feature-icon">📋</div>
+                        <h3>Sign Management</h3>
+                        <p>Track lawn signs across your district with public and private sign requests, locations, and installation status.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="canada-focus" class="canada-focus">
+            <div class="container">
+                <h2>Ready for 2026 Canadian Municipal Elections</h2>
+                <div class="cities-grid">
+                    <article class="city-card british-columbia">
+                        <div class="city-icon">🏔️</div>
+                        <h3>British Columbia</h3>
+                        <p>Pre-loaded data for BC municipalities. Perfect for municipal campaigns across Metro Vancouver and beyond.</p>
+                    </article>
+
+                    <article class="city-card ontario">
+                        <div class="city-icon">🏛️</div>
+                        <h3>Ontario</h3>
+                        <p>Complete municipal data for Ontario cities and towns. Start canvassing immediately in any district across the province.</p>
+                    </article>
+
+                    <article class="city-card manitoba">
+                        <div class="city-icon">🌾</div>
+                        <h3>Manitoba</h3>
+                        <p>Ready for Manitoba municipal elections with comprehensive address data for Winnipeg and surrounding municipalities.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section class="campaign-tool">
             <div class="container">
                 <h2>Professional Campaign Tools for Independent Candidates</h2>
@@ -212,7 +335,7 @@
                             <li>Real-time campaign insights</li>
                         </ul>
                     </div>
-                    
+
                     <div class="tool-message">
                         <div class="tool-icon">🎯</div>
                         <h3>No Voter List? No Problem</h3>
@@ -228,90 +351,58 @@
             </div>
         </section>
 
-        <section id="alberta-focus" class="alberta-focus">
-            <div class="container">
-                <h2>Ready for Alberta's Major Cities</h2>
-                <div class="cities-grid">
-                    <article class="city-card edmonton">
-                        <div class="city-icon">🏙️</div>
-                        <h3>Edmonton Metro Region</h3>
-                        <p>Pre-loaded with Edmonton's ward boundaries and surrounding communities. Perfect for municipal campaigns across the capital region.</p>
-                        <div class="features-columns">
-                            <ul class="city-features">
-                                <li>✓ Pre-loaded Data:</li>
-                                <li>• All houses pre-loaded</li>
-                                <li>• Neighbourhoods</li>
-                                <li>• Federal Polling</li>
-                                <li>• Historical Election Data</li>
-                            </ul>
-                            <ul class="city-features">
-                                <li>✓ Surrounding communities:</li>
-                                <li>• St. Albert</li>
-                                <li>• Sherwood Park</li>
-                                <li>• Fort Saskatchewan</li>
-                                <li>• Spruce Grove</li>
-                                <li>• Stony Plain</li>
-                                <li>• Beaumont</li>
-                                <li>• Leduc</li>
-                                <li>• Devon</li>
-                            </ul>
-                        </div>
-                    </article>
-                    
-                    <article class="city-card calgary">
-                        <div class="city-icon">🌆</div>
-                        <h3>Calgary Metropolitan Area</h3>
-                        <p>Complete Calgary ward and community data built-in, plus surrounding municipalities. Start canvassing immediately in any district.</p>
-                        <div class="features-columns">
-                            <ul class="city-features">
-                                <li>✓ Pre-loaded Data:</li>
-                                <li>• All houses pre-loaded</li>
-                                <li>• Neighbourhoods</li>
-                                <li>• Federal Polling</li>
-                                <li>• Historical Election Data</li>
-                            </ul>
-                            <ul class="city-features">
-                                <li>✓ Nearby cities:</li>
-                                <li>• Airdrie</li>
-                                <li>• Cochrane</li>
-                                <li>• Chestermere</li>
-                                <li>• Okotoks</li>
-                                <li>• High River</li>
-                                <li>• Strathmore</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-                <div class="alberta-cta">
-                    <p>Running in another Alberta municipality? Contact us for availability.</p>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
         <section id="features" class="features">
             <div class="container">
                 <h2>Key Features</h2>
                 <div class="feature-grid">
-                    <article class="feature-item">
-                        <div class="feature-icon">📍</div>
-                        <h3>Smart Area Selection</h3>
-                        <p>Draw areas on the map to select specific houses for canvassing activities. Perfect for targeting neighborhoods or creating efficient walking routes.</p>
-                    </article>
-                    <article class="feature-item">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Real-time Canvassing</h3>
-                        <p>Watch your campaign progress unfold live as team members knock doors. See completed interactions instantly on the map, preventing duplicate visits and maximizing efficiency.</p>
-                    </article>
                     <article class="feature-item">
                         <div class="feature-icon">🏠</div>
                         <h3>Pre-loaded Districts</h3>
                         <p>All houses in your district ready to go from day one — <strong>no voter list required</strong>.</p>
                     </article>
                     <article class="feature-item">
-                        <div class="feature-icon">📱</div>
-                        <h3>Mobile-First Design</h3>
-                        <p>Intuitive interface designed for canvassers on the move.</p>
+                        <div class="feature-icon">🚪</div>
+                        <h3>Door-to-Door Canvassing</h3>
+                        <p>Real-time mapping, instant sync, and live team member location tracking. Watch your campaign progress unfold live as team members knock doors.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">📞</div>
+                        <h3>Phonebanking</h3>
+                        <p>Call by personal phone or VOIP with scripts and automatic response tracking. Reach voters who aren't home when you knock.</p>
+                        <ul class="feature-pricing">
+                            <li>VOIP $0.03/min</li>
+                            <li>Number $5/mo</li>
+                            <li>Call forwarding incl.</li>
+                        </ul>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">💬</div>
+                        <h3>Text Blasts</h3>
+                        <p>Send targeted SMS campaigns to supporters with personalized messaging and delivery analytics.</p>
+                        <ul class="feature-pricing">
+                            <li>SMS $0.03/seg</li>
+                            <li>MMS $0.08/seg</li>
+                        </ul>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">📧</div>
+                        <h3>Email Campaigns</h3>
+                        <p>Create and send professional email campaigns to your voter database with tracking and segmentation.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">🗳️</div>
+                        <h3>GOTV Integration</h3>
+                        <p>Seamlessly coordinate your Get Out The Vote efforts. Call someone on the phonebank, and they're automatically crossed off for the door knocking team — no duplicate contacts.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">📍</div>
+                        <h3>Smart Area Selection</h3>
+                        <p>Draw areas on the map to select specific houses for activities. Perfect for targeting neighborhoods or creating efficient walking routes.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <h3>Real-time Analytics</h3>
+                        <p>Track campaign progress across all channels with powerful visualization tools and dashboards.</p>
                     </article>
                     <article class="feature-item">
                         <div class="feature-icon">👥</div>
@@ -319,25 +410,58 @@
                         <p>Protect your data with Owner, Manager, Admin, and Volunteer roles.</p>
                     </article>
                     <article class="feature-item">
-                        <div class="feature-icon">📊</div>
-                        <h3>Real-time Analytics</h3>
-                        <p>Track campaign progress with powerful visualization tools.</p>
-                    </article>
-                    <article class="feature-item">
-                        <div class="feature-icon">📅</div>
-                        <h3>Organized Activities</h3>
-                        <p>Create specific activities that volunteers can join, managed by your team.</p>
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile-First Design</h3>
+                        <p>Intuitive interface designed for canvassers on the move. Works on any device.</p>
                     </article>
                     <article class="feature-item">
                         <div class="feature-icon">🔄</div>
-                        <h3>Seamless Synchronization</h3>
-                        <p>All data syncs instantly across devices for real-time collaboration.</p>
+                        <h3>Seamless Sync</h3>
+                        <p>All data syncs instantly across devices and channels for real-time team collaboration.</p>
                     </article>
                     <article class="feature-item">
-                        <div class="feature-icon">🇨🇦</div>
+                        <div class="feature-icon">📊</div>
+                        <h3>Census Data &amp; Historical Results</h3>
+                        <p>Access census demographics and past provincial and federal election results to understand your district and target outreach.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">📋</div>
+                        <h3>Sign Management</h3>
+                        <p>Track public and private lawn sign requests, manage locations, and monitor installation status across your district.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt="Canadian Flag" style="width: 48px; height: auto;"></div>
                         <h3>Proudly <span class="canadian-text">Canadian</span></h3>
                         <p>Built in Canada, for Canadian campaigns, with local expertise and support.</p>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="integrations" class="integrations-section">
+            <div class="container">
+                <h2>Integrations</h2>
+                <div class="integrations-grid">
+                    <div class="integration-item">
+                        <img src="https://assets.nationbuilder.com/themes/58cbedc8cd0af55a03000000/attachments/original/1734385469/nationbuilder-mark-black.svg?1734385469" alt="NationBuilder" class="integration-logo">
+                        <span>NationBuilder</span>
+                    </div>
+                    <div class="integration-item">
+                        <img src="https://callhub.io/wp-content/uploads/2021/12/cropped-callhub-logomark.png" alt="CallHub" class="integration-logo">
+                        <span>CallHub</span>
+                    </div>
+                    <div class="integration-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Sheets_logo_%282014-2020%29.svg" alt="Google Sheets" class="integration-logo">
+                        <span>Google Sheets</span>
+                    </div>
+                    <div class="integration-item">
+                        <img src="https://s3.amazonaws.com/cdn.hotglue.xyz/images/logos/gohighlevel.png" alt="Go High Level" class="integration-logo">
+                        <span>Go High Level</span>
+                    </div>
+                    <div class="integration-item">
+                        <img src="https://7170227.fs1.hubspotusercontent-na1.net/hubfs/7170227/__hs-marketplace__/Quo%20App%20Icon%20Citric%20Yellow-1.png" alt="Quo" class="integration-logo">
+                        <span>Quo</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -351,7 +475,7 @@
                     <h4>Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#alberta-focus">Alberta</a></li>
+                        <li><a href="#canada-focus">Coverage</a></li>
                         <li><a href="#features">Key Features</a></li>
                         <!-- <li><a href="#testimonials">Testimonials</a></li> -->
                         <li><a href="#contact">Contact</a></li>
@@ -361,7 +485,8 @@
                 </div>
                 <div class="footer-contact">
                     <h4>Contact</h4>
-                    <p>Email: tyson@justcanvass.ca</p>
+                    <p>Email: <a href="mailto:tyson@justcanvass.ca">tyson@justcanvass.ca</a></p>
+                    <p>Phone: <a href="tel:7809651195">780-965-1195</a></p>
                 </div>
                 <div class="footer-social">
                     <h4>Follow Us</h4>
@@ -370,7 +495,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="copyright-year">2024</span> Just Canvass. All rights reserved.</p>
+                <p>&copy; <span id="copyright-year">2024</span> Just Canvass Solutions Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
