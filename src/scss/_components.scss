@@ -284,7 +284,15 @@
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
-    
+
+    .hero-canadian-badge {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: $primary-color;
+      letter-spacing: 0.03em;
+      margin-top: -1rem;
+    }
+
     .cta-buttons {
       display: flex;
       gap: 1rem;
@@ -1177,4 +1185,175 @@
       color: color.adjust($primary-color, $lightness: -10%);
     }
   }
-} 
+}
+
+// ─────────────────────────────────────────────────────────────
+// Hero pulse — compact 6-stat panel with year toggle (lives in hero)
+// ─────────────────────────────────────────────────────────────
+.hero-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+  .hero-canadian-badge {
+    margin: 0 !important;
+  }
+}
+
+.hero-pulse__toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(43, 45, 66, 0.06);
+  border: 1px solid rgba(43, 45, 66, 0.08);
+}
+
+.hero-pulse__indicator {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: calc(100% - 8px);
+  width: 0;
+  background: $dark-color;
+  border-radius: 999px;
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.05, 1),
+              width 0.4s cubic-bezier(0.65, 0, 0.05, 1);
+  z-index: 0;
+}
+
+.hero-pulse__btn {
+  position: relative;
+  z-index: 1;
+  padding: 0.4rem 0.85rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: $font-family-heading;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: color.adjust($dark-color, $lightness: 15%);
+  border-radius: 999px;
+  transition: color 0.3s ease;
+
+  &.is-active {
+    color: #fff;
+  }
+
+  &:hover:not(.is-active) {
+    color: $dark-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
+
+.hero-pulse {
+  margin: 0 0 2rem;
+
+  .hero-pulse__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+
+    @media (max-width: $breakpoint-sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // Featured stat: alone on its own row, centered, wider than the others (≈ 2 cols)
+  // Single-line layout: "12 Active Campaigns" — no icon, centered in the card
+  .hero-pulse__stat[data-stat="active_campaigns"] {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(66.667% - 0.2rem);
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.5rem;
+    grid-template-columns: none;
+    grid-template-areas: none;
+
+    .hero-pulse__label {
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      color: $dark-color;
+      text-transform: none;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      width: auto;
+      justify-self: stretch;
+    }
+  }
+
+  .hero-pulse__stat {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "value value"
+      "icon  label";
+    align-items: center;
+    column-gap: 0.5rem;
+    row-gap: 0.35rem;
+    padding: 0.85rem 0.95rem;
+    background: #fff;
+    border: 1px solid rgba(43, 45, 66, 0.08);
+    border-radius: 10px;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+      border-color: rgba(255, 107, 53, 0.45);
+      transform: translateY(-2px);
+    }
+
+    &.is-zero .hero-pulse__value {
+      color: color.adjust($dark-color, $lightness: 50%);
+    }
+  }
+
+  .hero-pulse__value {
+    grid-area: value;
+    font-family: $font-family-heading;
+    font-weight: 800;
+    font-size: 1.55rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: $primary-color;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.3s ease;
+    min-width: 0;
+  }
+
+  .hero-pulse__icon {
+    grid-area: icon;
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .hero-pulse__label {
+    grid-area: label;
+    align-self: center;
+    font-family: $font-family-heading;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: color.adjust($dark-color, $lightness: 20%);
+    min-width: 0;
+  }
+}

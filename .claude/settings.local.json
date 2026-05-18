@@ -20,7 +20,12 @@
       "WebFetch(domain:marketing.gohighlevel.com)",
       "WebFetch(domain:gohighlevel.com)",
       "WebFetch(domain:swag.gohighlevel.com)",
-      "WebFetch(domain:www.quo.vote)"
+      "WebFetch(domain:www.quo.vote)",
+      "WebFetch(domain:qomon.com)",
+      "WebFetch(domain:www.priv.gc.ca)",
+      "Skill(frontend-design:frontend-design)",
+      "Bash(npx sass *)",
+      "Bash(python -m json.tool)"
     ]
   }
 }

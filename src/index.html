@@ -108,7 +108,7 @@
         "@type": "Organization",
         "name": "Just Canvass",
         "url": "https://www.justcanvass.ca",
-        "email": "tyson@justcanvass.ca",
+        "email": "hello@justcanvass.ca",
         "telephone": "+1-780-965-1195",
         "areaServed": {
           "@type": "Country",
@@ -163,25 +163,55 @@
                 <div class="hero-content">
                     <h1>Revolutionize Your Ground Game</h1>
                     <p>The leading campaign app for Canadian municipal elections. Canvassing, Phonebanking, Text blasts, Email campaigns, and more for your campaign.</p>
-                
-                <div class="stats-row">
-                    <div class="stat-card">
-                        <div class="stat-icon">🚪</div>
-                        <h3>Doors Knocked</h3>
-                        <div class="stat-value" id="total-interactions">Loading...</div>
+                    <div class="hero-badge-row">
+                        <p class="hero-canadian-badge">🍁 100% Canadian-Made &amp; Run</p>
+                        <div class="hero-pulse__toggle" role="tablist" aria-label="Filter stats by year">
+                            <span class="hero-pulse__indicator" aria-hidden="true"></span>
+                            <button type="button" class="hero-pulse__btn" role="tab" aria-selected="false" data-range="all">All</button>
+                            <button type="button" class="hero-pulse__btn is-active" role="tab" aria-selected="true" data-range="2026">'26</button>
+                            <button type="button" class="hero-pulse__btn" role="tab" aria-selected="false" data-range="2025">'25</button>
+                        </div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">✅</div>
-                        <h3>Conversations</h3>
-                        <div class="stat-value" id="answered-interactions">Loading...</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">👥</div>
-                        <h3>Candidates</h3>
-                        <div class="stat-value" id="unique-candidates">Loading...</div>
+
+                <div class="hero-pulse">
+                    <div class="hero-pulse__grid" aria-live="polite">
+                        <div class="hero-pulse__stat" data-stat="doors_knocked">
+                            <span class="hero-pulse__icon" aria-hidden="true">🚪</span>
+                            <span class="hero-pulse__value" data-value="0">0</span>
+                            <span class="hero-pulse__label">Doors Knocked</span>
+                        </div>
+                        <div class="hero-pulse__stat" data-stat="literature_drops">
+                            <span class="hero-pulse__icon" aria-hidden="true">📬</span>
+                            <span class="hero-pulse__value" data-value="0">0</span>
+                            <span class="hero-pulse__label">Flyers Delivered</span>
+                        </div>
+                        <div class="hero-pulse__stat" data-stat="texts_sent">
+                            <span class="hero-pulse__icon" aria-hidden="true">💬</span>
+                            <span class="hero-pulse__value" data-value="0">0</span>
+                            <span class="hero-pulse__label">Texts Sent</span>
+                        </div>
+                        <div class="hero-pulse__stat" data-stat="emails_sent">
+                            <span class="hero-pulse__icon" aria-hidden="true">✉️</span>
+                            <span class="hero-pulse__value" data-value="0">0</span>
+                            <span class="hero-pulse__label">Emails Sent</span>
+                        </div>
+                        <div class="hero-pulse__stat" data-stat="phone_bank_calls">
+                            <span class="hero-pulse__icon" aria-hidden="true">📞</span>
+                            <span class="hero-pulse__value" data-value="0">0</span>
+                            <span class="hero-pulse__label">Phonebank Calls</span>
+                        </div>
+                        <div class="hero-pulse__stat" data-stat="pre_recorded_calls">
+                            <span class="hero-pulse__icon" aria-hidden="true">📢</span>
+                            <span class="hero-pulse__value" data-value="0">0</span>
+                            <span class="hero-pulse__label">Robocalls</span>
+                        </div>
+                        <div class="hero-pulse__stat" data-stat="active_campaigns">
+                            <span class="hero-pulse__value" data-value="0">0</span>
+                            <span class="hero-pulse__label">Active Campaigns</span>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="cta-buttons">
                     <!-- <a href="#" class="btn btn-primary">Get Started</a>
                     <a href="https://app.justcanvass.com/demo" class="btn btn-secondary">Try Demo Campaign</a> -->
@@ -227,25 +257,6 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-stats">
-                <div class="stats-row">
-                    <div class="stat-card">
-                        <div class="stat-icon">🚪</div>
-                        <h3>Doors Knocked</h3>
-                        <div class="stat-value" id="mobile-total-interactions">Loading...</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">✅</div>
-                        <h3>Conversations</h3>
-                        <div class="stat-value" id="mobile-answered-interactions">Loading...</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">👥</div>
-                        <h3>Candidates</h3>
-                        <div class="stat-value" id="mobile-unique-candidates">Loading...</div>
-                    </div>
-                </div>
-                        </div>
         </div>
         </section>
 
@@ -258,14 +269,9 @@
                         <p>Door-to-door voter outreach with real-time mapping, instant sync, and live team member tracking.</p>
                     </article>
                     <article class="core-feature-item">
-                        <div class="core-feature-icon">📞</div>
-                        <h3>Phonebanking</h3>
-                        <p>Reach voters by personal phone or VOIP with integrated calling tools, scripts, and automatic response tracking.</p>
-                        <ul class="feature-pricing">
-                            <li>VOIP $0.03/min</li>
-                            <li>Number $5/mo</li>
-                            <li>Call forwarding incl.</li>
-                        </ul>
+                        <div class="core-feature-icon">📋</div>
+                        <h3>Sign Management</h3>
+                        <p>Track lawn signs across your district with public and private sign requests, locations, and installation status.</p>
                     </article>
                     <article class="core-feature-item">
                         <div class="core-feature-icon">💬</div>
@@ -282,14 +288,19 @@
                         <p>Create and send professional email campaigns to your voter database with tracking and segmentation.</p>
                     </article>
                     <article class="core-feature-item">
+                        <div class="core-feature-icon">📞</div>
+                        <h3>Phonebanking</h3>
+                        <p>Reach voters by personal phone or VOIP with integrated calling tools, scripts, and automatic response tracking.</p>
+                        <ul class="feature-pricing">
+                            <li>VOIP $0.03/min</li>
+                            <li>Number $5/mo</li>
+                            <li>Call forwarding incl.</li>
+                        </ul>
+                    </article>
+                    <article class="core-feature-item">
                         <div class="core-feature-icon">📊</div>
                         <h3>Historical Results &amp; Census</h3>
                         <p>Access provincial and federal election results plus census demographics to understand voting patterns and target outreach.</p>
-                    </article>
-                    <article class="core-feature-item">
-                        <div class="core-feature-icon">📋</div>
-                        <h3>Sign Management</h3>
-                        <p>Track lawn signs across your district with public and private sign requests, locations, and installation status.</p>
                     </article>
                 </div>
             </div>
@@ -366,14 +377,9 @@
                         <p>Real-time mapping, instant sync, and live team member location tracking. Watch your campaign progress unfold live as team members knock doors.</p>
                     </article>
                     <article class="feature-item">
-                        <div class="feature-icon">📞</div>
-                        <h3>Phonebanking</h3>
-                        <p>Call by personal phone or VOIP with scripts and automatic response tracking. Reach voters who aren't home when you knock.</p>
-                        <ul class="feature-pricing">
-                            <li>VOIP $0.03/min</li>
-                            <li>Number $5/mo</li>
-                            <li>Call forwarding incl.</li>
-                        </ul>
+                        <div class="feature-icon">📋</div>
+                        <h3>Sign Management</h3>
+                        <p>Track public and private lawn sign requests, manage locations, and monitor installation status across your district.</p>
                     </article>
                     <article class="feature-item">
                         <div class="feature-icon">💬</div>
@@ -388,6 +394,16 @@
                         <div class="feature-icon">📧</div>
                         <h3>Email Campaigns</h3>
                         <p>Create and send professional email campaigns to your voter database with tracking and segmentation.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">📞</div>
+                        <h3>Phonebanking</h3>
+                        <p>Call by personal phone or VOIP with scripts and automatic response tracking. Reach voters who aren't home when you knock.</p>
+                        <ul class="feature-pricing">
+                            <li>VOIP $0.03/min</li>
+                            <li>Number $5/mo</li>
+                            <li>Call forwarding incl.</li>
+                        </ul>
                     </article>
                     <article class="feature-item">
                         <div class="feature-icon">🗳️</div>
@@ -421,13 +437,8 @@
                     </article>
                     <article class="feature-item">
                         <div class="feature-icon">📊</div>
-                        <h3>Census Data &amp; Historical Results</h3>
+                        <h3>Election Results &amp; Census</h3>
                         <p>Access census demographics and past provincial and federal election results to understand your district and target outreach.</p>
-                    </article>
-                    <article class="feature-item">
-                        <div class="feature-icon">📋</div>
-                        <h3>Sign Management</h3>
-                        <p>Track public and private lawn sign requests, manage locations, and monitor installation status across your district.</p>
                     </article>
                     <article class="feature-item">
                         <div class="feature-icon">📢</div>
@@ -495,8 +506,7 @@
                 </div>
                 <div class="footer-contact">
                     <h4>Contact</h4>
-                    <p>Email: <a href="mailto:tyson@justcanvass.ca">tyson@justcanvass.ca</a></p>
-                    <p>Phone: <a href="tel:7809651195">780-965-1195</a></p>
+                    <p>Email: <a href="mailto:hello@justcanvass.ca">hello@justcanvass.ca</a></p>
                 </div>
                 <div class="footer-social">
                     <h4>Follow Us</h4>
@@ -512,43 +522,129 @@
 
     <script src="./js/main.js"></script>
     <script>
-        // Format number with commas
-        function formatNumber(num) {
-            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    (function () {
+        const ENDPOINT = 'https://api.justcanvass.ca/api/public/stat';
+        const STATS = ['active_campaigns','doors_knocked','literature_drops','texts_sent','emails_sent','phone_bank_calls','pre_recorded_calls'];
+        const nfmt = new Intl.NumberFormat('en-CA');
+        let payload = null;
+        let currentRange = '2026';
+        const animState = new WeakMap();
+
+        function fmt(n) { return nfmt.format(Math.max(0, Math.round(n))); }
+
+        function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+        function animateValue(el, to) {
+            const prev = animState.get(el);
+            if (prev) cancelAnimationFrame(prev.raf);
+            const from = prev ? prev.last : 0;
+            const start = performance.now();
+            const dur = 900;
+            const tick = (now) => {
+                const t = Math.min(1, (now - start) / dur);
+                const v = from + (to - from) * easeOutCubic(t);
+                el.textContent = fmt(v);
+                if (t < 1) {
+                    animState.set(el, { raf: requestAnimationFrame(tick), last: v });
+                } else {
+                    el.textContent = fmt(to);
+                    animState.set(el, { raf: 0, last: to });
+                }
+            };
+            animState.set(el, { raf: requestAnimationFrame(tick), last: from });
         }
 
-        // Fetch statistics from API
-        fetch('https://api.justcanvass.ca/api/public/stat')
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    // Update desktop version
-                    document.getElementById('total-interactions').textContent = formatNumber(data.data.total_doorknocks);
-                    document.getElementById('answered-interactions').textContent = formatNumber(data.data.answered_interactions);
-                    document.getElementById('unique-candidates').textContent = formatNumber(data.data.unique_candidates);
-                    
-                    // Update mobile version
-                    document.getElementById('mobile-total-interactions').textContent = formatNumber(data.data.total_doorknocks);
-                    document.getElementById('mobile-answered-interactions').textContent = formatNumber(data.data.answered_interactions);
-                    document.getElementById('mobile-unique-candidates').textContent = formatNumber(data.data.unique_candidates);
-                } else {
-                    console.error('Failed to load statistics');
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching statistics:', error);
-                const errorMessage = 'Error loading data';
-                
-                // Desktop version
-                document.getElementById('total-interactions').textContent = errorMessage;
-                document.getElementById('answered-interactions').textContent = errorMessage;
-                document.getElementById('unique-candidates').textContent = errorMessage;
-                
-                // Mobile version
-                document.getElementById('mobile-total-interactions').textContent = errorMessage;
-                document.getElementById('mobile-answered-interactions').textContent = errorMessage;
-                document.getElementById('mobile-unique-candidates').textContent = errorMessage;
+        function render(range) {
+            if (!payload) return;
+            const totals = payload.totals || {};
+            const y26 = (payload.by_year && payload.by_year['2026']) || {};
+            const y25 = (payload.by_year && payload.by_year['2025']) || {};
+            const source = range === '2026' ? y26 : range === '2025' ? y25 : totals;
+
+            document.querySelectorAll('.hero-pulse__stat').forEach(card => {
+                const key = card.dataset.stat;
+                const value = Number(source[key] || 0);
+                const valEl = card.querySelector('.hero-pulse__value');
+                animateValue(valEl, value);
+                card.classList.toggle('is-zero', value === 0);
             });
+
+            const wrap = document.querySelector('.hero-pulse');
+            if (wrap) wrap.dataset.range = range;
+        }
+
+        function setRange(range, btn) {
+            currentRange = range;
+            const buttons = document.querySelectorAll('.hero-pulse__btn');
+            buttons.forEach(b => {
+                const active = b === btn;
+                b.classList.toggle('is-active', active);
+                b.setAttribute('aria-selected', active ? 'true' : 'false');
+                if (active) {
+                    const toggle = b.parentElement;
+                    const ind = toggle.querySelector('.hero-pulse__indicator');
+                    if (ind) {
+                        ind.style.width = b.offsetWidth + 'px';
+                        ind.style.transform = 'translateX(' + b.offsetLeft + 'px)';
+                    }
+                }
+            });
+            render(range);
+        }
+
+        function showError() {
+            document.querySelectorAll('.hero-pulse__value').forEach(el => {
+                el.textContent = '—';
+            });
+        }
+
+        function init() {
+            const toggle = document.querySelector('.hero-pulse__toggle');
+            if (toggle) {
+                toggle.addEventListener('click', (e) => {
+                    const btn = e.target.closest('.hero-pulse__btn');
+                    if (!btn) return;
+                    setRange(btn.dataset.range, btn);
+                });
+                const active = toggle.querySelector('.is-active');
+                if (active) {
+                    requestAnimationFrame(() => {
+                        const ind = toggle.querySelector('.hero-pulse__indicator');
+                        if (ind) {
+                            ind.style.width = active.offsetWidth + 'px';
+                            ind.style.transform = 'translateX(' + active.offsetLeft + 'px)';
+                        }
+                    });
+                }
+                window.addEventListener('resize', () => {
+                    const b = toggle.querySelector('.is-active');
+                    const ind = toggle.querySelector('.hero-pulse__indicator');
+                    if (b && ind) {
+                        ind.style.width = b.offsetWidth + 'px';
+                        ind.style.transform = 'translateX(' + b.offsetLeft + 'px)';
+                    }
+                });
+            }
+
+            fetch(ENDPOINT)
+                .then(r => r.json())
+                .then(data => {
+                    if (!data || !data.success || !data.data) throw new Error('bad payload');
+                    payload = data.data;
+                    render(currentRange);
+                })
+                .catch(err => {
+                    console.error('stats fetch failed', err);
+                    showError();
+                });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
     </script>
 </body>
 </html> 
