@@ -41,11 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // GA4 lead tracking on quote/demo CTAs
+  // GA4 and Meta Pixel lead tracking on quote/demo CTAs
   document.querySelectorAll('[data-cta]').forEach(el => {
     el.addEventListener('click', function() {
+      // Google Analytics
       if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', { cta_location: this.dataset.cta });
+      }
+      
+      // Meta Pixel
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', { content_name: this.dataset.cta });
       }
     });
   });
