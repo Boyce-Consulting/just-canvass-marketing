@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Canvass - Political Canvassing App for Canadian Municipal Elections</title>
-    <meta name="description" content="Professional digital canvassing app for Canadian municipal elections. Door-to-door campaign tools, phonebanking, text blasts, email campaigns, and real-time analytics for independent candidates across BC, Ontario, and Manitoba.">
-    <meta name="keywords" content="political canvassing, Canadian municipal elections, campaign app, voter outreach, BC elections, Ontario elections, Manitoba elections, digital canvassing, political campaign tools, phonebanking, text blasts">
+    <title>Just Canvass – Canvassing App for Canadian Municipal Elections</title>
+    <meta name="description" content="Canvassing, sign management, phonebanking, text and email campaigns for Canadian municipal elections. Email us for a quote and a personal demo.">
     <meta name="author" content="Just Canvass">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.justcanvass.ca">
-    
+    <meta name="theme-color" content="#ff6b35">
+    <link rel="canonical" href="https://www.justcanvass.ca/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.justcanvass.ca">
-    <meta property="og:title" content="Just Canvass - Political Canvassing App for Canadian Municipal Elections">
-    <meta property="og:description" content="Professional digital canvassing app for Canadian municipal elections. Door-to-door campaign tools, phonebanking, text blasts, and real-time analytics for independent candidates.">
-    <meta property="og:image" content="https://www.justcanvass.ca/assets/images/screenshots/dashboard.png">
+    <meta property="og:url" content="https://www.justcanvass.ca/">
+    <meta property="og:title" content="Just Canvass – Canvassing App for Canadian Municipal Elections">
+    <meta property="og:description" content="Canvassing, sign management, phonebanking, text and email campaigns for Canadian municipal elections. Email us for a quote and a personal demo.">
+    <meta property="og:image" content="https://www.justcanvass.ca/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Just Canvass – canvassing app for Canadian municipal elections, shown on a phone with a campaign map">
     <meta property="og:locale" content="en_CA">
     <meta property="og:site_name" content="Just Canvass">
-    
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.justcanvass.ca">
-    <meta property="twitter:title" content="Just Canvass - Political Canvassing App for Canadian Municipal Elections">
-    <meta property="twitter:description" content="Professional digital canvassing app for Canadian municipal elections. Door-to-door campaign tools, phonebanking, text blasts, and real-time analytics for independent candidates.">
-    <meta property="twitter:image" content="https://www.justcanvass.ca/assets/images/screenshots/dashboard.png">
-    
-    <!-- Geo tags for local SEO -->
-    <meta name="geo.region" content="CA">
-    <meta name="geo.placename" content="Canada">
-    <meta name="geo.position" content="56.1304;-106.3468">
-    <meta name="ICBM" content="56.1304, -106.3468">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.justcanvass.ca/">
+    <meta name="twitter:title" content="Just Canvass – Canvassing App for Canadian Municipal Elections">
+    <meta name="twitter:description" content="Canvassing, sign management, phonebanking, text and email campaigns for Canadian municipal elections. Email us for a quote and a personal demo.">
+    <meta name="twitter:image" content="https://www.justcanvass.ca/og-image.png">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
@@ -63,27 +60,27 @@
         },
         {
           "@type": "SiteNavigationElement",
+          "name": "Pricing",
+          "description": "Custom campaign quotes tailored to your level of government, district size, and contest",
+          "url": "https://www.justcanvass.ca/#pricing"
+        },
+        {
+          "@type": "SiteNavigationElement",
           "name": "Features",
           "description": "Canvassing, phonebanking, text blasts, email campaigns, and analytics tools",
           "url": "https://www.justcanvass.ca/#features"
         },
         {
           "@type": "SiteNavigationElement",
-          "name": "Contact",
-          "description": "Get in touch with the Just Canvass team",
-          "url": "https://www.justcanvass.ca/#contact"
+          "name": "Integrations",
+          "description": "Connect Just Canvass with NationBuilder, CallHub, Google Sheets, Go High Level, and Quo",
+          "url": "https://www.justcanvass.ca/#integrations"
         },
         {
           "@type": "SiteNavigationElement",
           "name": "Coverage",
           "description": "Municipal election coverage across BC, Ontario, Manitoba, and Alberta",
           "url": "https://www.justcanvass.ca/#canada-focus"
-        },
-        {
-          "@type": "SiteNavigationElement",
-          "name": "Privacy Policy",
-          "description": "Just Canvass privacy policy and data handling practices",
-          "url": "https://www.justcanvass.ca/policies/privacy-policy.html"
         }
       ]
     }
@@ -97,13 +94,8 @@
       "name": "Just Canvass",
       "description": "Professional digital canvassing app for Canadian municipal elections with door-to-door campaign tools, phonebanking, text blasts, and voter outreach features",
       "url": "https://www.justcanvass.ca",
-      "applicationCategory": "Political Campaign Software",
+      "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web, iOS, Android",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "CAD"
-      },
       "provider": {
         "@type": "Organization",
         "name": "Just Canvass",
@@ -118,6 +110,8 @@
       "featureList": [
         "Digital door-to-door canvassing",
         "Phonebanking",
+        "Campaign phone number with call forwarding and voicemail",
+        "Custom petition forms",
         "Text blasts",
         "Email campaigns",
         "Voter database management",
@@ -144,16 +138,22 @@
     <header class="header">
         <div class="container">
             <div class="logo"><span class="maple-leaf">🍁</span> Just Canvass</div>
-            <nav class="main-nav">
+            <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#canada-focus">Coverage</a></li>
                     <li><a href="#features">Key Features</a></li>
                     <li><a href="#integrations">Integrations</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="login-item"><a href="https://app.justcanvass.ca" class="nav-cta" target="_blank" rel="noopener noreferrer">Login</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <a href="https://app.justcanvass.ca" class="nav-cta" target="_blank" rel="noopener noreferrer">Login</a>
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -162,7 +162,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Revolutionize Your Ground Game</h1>
-                    <p>The leading campaign app for Canadian municipal elections. Canvassing, Phonebanking, Text blasts, Email campaigns, and more for your campaign.</p>
+                    <p>The leading campaign app for Canadian municipal elections. Canvassing, Sign management, Phonebanking, Text blasts, Email campaigns, and more for your campaign.</p>
                     <div class="hero-badge-row">
                         <p class="hero-canadian-badge">🍁 100% Canadian-Made &amp; Run</p>
                         <div class="hero-pulse__toggle" role="tablist" aria-label="Filter stats by year">
@@ -212,49 +212,31 @@
                     </div>
                 </div>
 
-                <div class="cta-buttons">
-                    <!-- <a href="#" class="btn btn-primary">Get Started</a>
-                    <a href="https://app.justcanvass.com/demo" class="btn btn-secondary">Try Demo Campaign</a> -->
-                </div>
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
                     <div class="phone-frame">
                         <div class="phone-screen">
+                            <div class="phone-statusbar" aria-hidden="true">
+                                <span class="phone-statusbar__time">9:41</span>
+                                <span class="phone-statusbar__right">
+                                    <span class="phone-statusbar__signal">
+                                        <span></span><span></span><span></span><span></span>
+                                    </span>
+                                    <span class="phone-statusbar__battery"></span>
+                                </span>
+                            </div>
                             <div class="carousel">
                                 <div class="carousel-item active">
                                     <img src="./assets/images/screenshots/stalbert.png" alt="Just Canvass mobile app showing St. Albert municipal election campaign map with canvassing areas and voter data">
                                 </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/map-demo-campaign.png" alt="Just Canvass campaign map overview showing Edmonton area with color-coded canvassing zones and voter interaction data">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/dashboard.png" alt="Just Canvass campaign dashboard displaying real-time statistics, progress tracking, and team activity for Alberta municipal elections">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/heat-maps.png" alt="Just Canvass heat map visualization showing voter engagement levels across different neighborhoods in Alberta">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/create-activity-example.png" alt="Just Canvass mobile interface for creating new canvassing activities with area selection and volunteer assignment">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/activity-progress.png" alt="Just Canvass activity progress tracking showing completed doors, conversations, and team performance metrics">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/interaction-screen.png" alt="Just Canvass voter interaction interface for recording door-to-door conversations and political preferences">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/canvassed-area.png" alt="Just Canvass map showing completed canvassing areas with green highlighting and voter contact status">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/campaign-stats.png" alt="Just Canvass campaign statistics dashboard showing doors knocked, conversations, and voter support levels">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./assets/images/screenshots/parcel-people.png" alt="Just Canvass household information screen displaying voter details and interaction history for door-to-door canvassing">
-                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="mailto:hello@justcanvass.ca?subject=Just%20Canvass%20Quote%20%26%20Demo%20Request&amp;body=District%3A%20%0APosition%3A%20%0A" class="btn btn-primary" data-cta="hero">Get a Quote &amp; Demo</a>
+                    <a href="#pricing" class="btn btn-secondary">See Pricing</a>
                 </div>
             </div>
         </div>
@@ -333,7 +315,7 @@
 
         <section class="campaign-tool">
             <div class="container">
-                <h2>Professional Campaign Tools for Independent Candidates</h2>
+                <h2>Professional Campaign Tools for Political Candidates</h2>
                 <div class="tool-showcase">
                     <div class="tool-message">
                         <div class="tool-icon">⚡️</div>
@@ -406,6 +388,16 @@
                         </ul>
                     </article>
                     <article class="feature-item">
+                        <div class="feature-icon">☎️</div>
+                        <h3>Campaign Phone Number</h3>
+                        <p>A dedicated number for your campaign. Make and receive calls, keep a complete call history, and never miss a voter with call forwarding and voicemail.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">✍️</div>
+                        <h3>Petitions</h3>
+                        <p>Create custom forms for a petition or any form and collect responses directly in the app — automatically mapped and tagged.</p>
+                    </article>
+                    <article class="feature-item">
                         <div class="feature-icon">🗳️</div>
                         <h3>GOTV Integration</h3>
                         <p>Seamlessly coordinate your Get Out The Vote efforts. Call someone on the phonebank, and they're automatically crossed off for the door knocking team — no duplicate contacts.</p>
@@ -424,6 +416,11 @@
                         <div class="feature-icon">👥</div>
                         <h3>Role-Based Access</h3>
                         <p>Protect your data with Owner, Manager, Admin, and Volunteer roles.</p>
+                    </article>
+                    <article class="feature-item">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Slates &amp; Multi-Candidate Operations</h3>
+                        <p>Coordinate a slate of independent campaigns from one place. Roll-up dashboards across every campaign and volunteer, slate-wide outreach, shared volunteer mobilization, and unified GOTV — while each candidate runs their own campaign.</p>
                     </article>
                     <article class="feature-item">
                         <div class="feature-icon">📱</div>
@@ -453,7 +450,7 @@
                     <article class="feature-item">
                         <div class="feature-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg" alt="Canadian Flag" style="width: 48px; height: auto;"></div>
                         <h3>Proudly <span class="canadian-text">Canadian</span></h3>
-                        <p>Built in Canada, for Canadian campaigns, with local expertise and support.</p>
+                        <p>Built in Canada, for Canadian campaigns, with real Canadian campaign experience, local expertise, and support.</p>
                     </article>
                 </div>
             </div>
@@ -461,7 +458,7 @@
 
         <section id="integrations" class="integrations-section">
             <div class="container">
-                <h2>Integrations</h2>
+                <h2>Integrations <span class="integrations-subhead">(so far)</span></h2>
                 <div class="integrations-grid">
                     <div class="integration-item">
                         <img src="https://assets.nationbuilder.com/themes/58cbedc8cd0af55a03000000/attachments/original/1734385469/nationbuilder-mark-black.svg?1734385469" alt="NationBuilder" class="integration-logo">
@@ -483,7 +480,34 @@
                         <img src="https://7170227.fs1.hubspotusercontent-na1.net/hubfs/7170227/__hs-marketplace__/Quo%20App%20Icon%20Citric%20Yellow-1.png" alt="Quo" class="integration-logo">
                         <span>Quo</span>
                     </div>
+                    <div class="integration-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" class="integration-logo integration-logo--wide">
+                        <span>Stripe</span>
+                    </div>
                 </div>
+                <p class="integrations-intro">New integrations are built at the request of a campaign. If the platform you rely on isn't here yet, let us know and we'll add it.</p>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2>Pricing</h2>
+                <p class="pricing-intro">Every contest is different, so every quote is too. <a href="mailto:hello@justcanvass.ca?subject=Just%20Canvass%20Quote%20%26%20Demo%20Request&amp;body=District%3A%20%0APosition%3A%20%0A" data-cta="pricing-text">Email us</a> for a quote tailored to your district and contest, plus a personal demo.</p>
+                <div class="pricing-cta">
+                    <a href="mailto:hello@justcanvass.ca?subject=Just%20Canvass%20Quote%20%26%20Demo%20Request&amp;body=District%3A%20%0APosition%3A%20%0A" class="btn btn-primary" data-cta="pricing">Email for a Quote &amp; Demo</a>
+                    <button type="button" class="copy-email" data-copy="hello@justcanvass.ca" aria-label="Copy email address hello@justcanvass.ca to clipboard">
+                        <span class="copy-email__text">hello@justcanvass.ca</span>
+                        <svg class="copy-email__icon copy-email__icon--copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        <svg class="copy-email__icon copy-email__icon--check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span class="copy-email__tooltip" aria-hidden="true">Copied!</span>
+                    </button>
+                </div>
+                <p class="pricing-note">We reply within one business day — no obligation.</p>
             </div>
         </section>
     </main>
@@ -567,6 +591,10 @@
                 const valEl = card.querySelector('.hero-pulse__value');
                 animateValue(valEl, value);
                 card.classList.toggle('is-zero', value === 0);
+                if (key === 'active_campaigns') {
+                    const labelEl = card.querySelector('.hero-pulse__label');
+                    if (labelEl) labelEl.textContent = range === 'all' ? 'Unique Campaigns' : 'Active Campaigns';
+                }
             });
 
             const wrap = document.querySelector('.hero-pulse');
