@@ -1,0 +1,33 @@
+# Just Canvass
+
+> Just Canvass is a professional digital canvassing platform built in Canada for Canadian municipal election campaigns. It gives independent candidates, slates, and local campaigns the same ground-game tools as major political parties: door-to-door canvassing, phonebanking, text blasts, email campaigns, robocalls, sign management, GOTV, and real-time analytics — with districts and voter data pre-loaded for British Columbia, Ontario, Manitoba, and Alberta.
+
+Key facts:
+
+- Product: web, iOS, and Android canvassing app for political campaigns at app.justcanvass.ca
+- Made for: Canadian municipal elections (mayor, council, school board trustee), including the 2026 municipal election cycle; supports single candidates and multi-candidate slates
+- Coverage: British Columbia, Ontario, Manitoba, and Alberta, with pre-loaded electoral districts — campaigns do not need to bring their own voter list to get started
+- Features: door-to-door canvassing, sign management, text blasts, email campaigns, phonebanking, robocalls, GOTV integration, smart area selection, real-time analytics, heat maps, historical election results and census data, role-based team access, mobile-first design with seamless sync
+- Integrations: NationBuilder, CallHub, Google Sheets, Go High Level, Quo, and Stripe; new integrations are built at the request of a campaign
+- Pricing: custom quotes only — every quote is tailored to the level of government, district size, location, and typical campaign spend for the contest (e.g., a Toronto council seat is quoted differently than a small-town mayoral race). Request a quote at hello@justcanvass.ca
+- Contact: hello@justcanvass.ca, +1-780-965-1195
+- Company: Just Canvass Solutions Ltd., a Canadian company with real Canadian campaign experience
+
+## Main pages
+
+- [Home](https://www.justcanvass.ca/): product overview, features, coverage, integrations, and pricing
+- [Key Features](https://www.justcanvass.ca/#features): full feature list for canvassing, outreach, and analytics tools
+- [Coverage](https://www.justcanvass.ca/#canada-focus): supported provinces and 2026 municipal election readiness
+- [Integrations](https://www.justcanvass.ca/#integrations): platforms Just Canvass connects with
+- [Pricing](https://www.justcanvass.ca/#pricing): how custom campaign quotes work and how to request one
+- [Campaign app login](https://app.justcanvass.ca/): sign in to the Just Canvass campaign dashboard
+
+## Policies
+
+- [Privacy Policy](https://www.justcanvass.ca/policies/privacy-policy.html): how Just Canvass collects, uses, and protects personal information
+- [User Agreement](https://www.justcanvass.ca/policies/user-agreement.html): terms of service for using the Just Canvass platform
+
+## Optional
+
+- [Facebook](https://www.facebook.com/JustCanvassApp/): Just Canvass on Facebook
+- [LinkedIn](https://www.linkedin.com/company/justcanvassapp): Just Canvass on LinkedIn
