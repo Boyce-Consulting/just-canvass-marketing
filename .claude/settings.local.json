@@ -54,7 +54,8 @@
       "PowerShell(npx parcel src/index.html --port 1238 --no-autoinstall)",
       "PowerShell(npx parcel src/index.html --port 1239 --no-autoinstall)",
       "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; if \\(-not \\(Test-Path $edge\\)\\) { $edge = \"C:\\\\Program Files\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" }; Start-Process -FilePath $edge -ArgumentList '--headless','--disable-gpu','--window-size=500,2400','--virtual-time-budget=6000',\"--screenshot=$env:TEMP\\\\jc-m1.png\",'http://localhost:1239' -Wait; Start-Sleep -Seconds 1; \\(Get-Item \"$env:TEMP\\\\jc-m1.png\"\\).Length)",
-      "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; if \\(-not \\(Test-Path $edge\\)\\) { $edge = \"C:\\\\Program Files\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" }; Start-Process -FilePath $edge -ArgumentList '--headless','--disable-gpu','--window-size=414,900','--virtual-time-budget=6000',\"--screenshot=$env:TEMP\\\\jc-m2.png\",'http://localhost:1239' -Wait; Start-Sleep -Seconds 1; \\(Get-Item \"$env:TEMP\\\\jc-m2.png\"\\).Length)"
+      "PowerShell($edge = \"C:\\\\Program Files \\(x86\\)\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\"; if \\(-not \\(Test-Path $edge\\)\\) { $edge = \"C:\\\\Program Files\\\\Microsoft\\\\Edge\\\\Application\\\\msedge.exe\" }; Start-Process -FilePath $edge -ArgumentList '--headless','--disable-gpu','--window-size=414,900','--virtual-time-budget=6000',\"--screenshot=$env:TEMP\\\\jc-m2.png\",'http://localhost:1239' -Wait; Start-Sleep -Seconds 1; \\(Get-Item \"$env:TEMP\\\\jc-m2.png\"\\).Length)",
+      "WebFetch(domain:goknockdoors.ca)"
     ]
   }
 }
