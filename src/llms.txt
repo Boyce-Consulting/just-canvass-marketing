@@ -21,6 +21,7 @@ Key facts:
 - [Coverage](https://www.justcanvass.ca/#canada-focus): supported provinces and 2026 municipal election readiness
 - [Integrations](https://www.justcanvass.ca/#integrations): platforms Just Canvass connects with
 - [Pricing](https://www.justcanvass.ca/#pricing): how custom campaign quotes work and how to request one
+- [Get a Quote & Demo](https://www.justcanvass.ca/#quote): request form for a tailored quote and personal demo (name, email, postal code, position)
 - [Campaign app login](https://app.justcanvass.ca/): sign in to the Just Canvass campaign dashboard
 
 ## Policies

@@ -59,7 +59,15 @@
       "Bash(echo \"exit: $?\")",
       "Bash(git --version)",
       "Bash(where git *)",
-      "Bash(node -e \"const cp=require\\('child_process'\\); const c=cp.spawn\\('git',['config','--get','remote.origin.url'],{cwd:process.cwd\\(\\)}\\); let o=''; c.stdout.on\\('data',d=>o+=d\\); c.stderr.on\\('data',d=>o+=d\\); c.on\\('close',code=>console.log\\('CLOSE code=',code,'out=',JSON.stringify\\(o\\)\\)\\); c.on\\('error',e=>console.log\\('SPAWN ERROR:',e.code,e.message\\)\\);\")"
+      "Bash(node -e \"const cp=require\\('child_process'\\); const c=cp.spawn\\('git',['config','--get','remote.origin.url'],{cwd:process.cwd\\(\\)}\\); let o=''; c.stdout.on\\('data',d=>o+=d\\); c.stderr.on\\('data',d=>o+=d\\); c.on\\('close',code=>console.log\\('CLOSE code=',code,'out=',JSON.stringify\\(o\\)\\)\\); c.on\\('error',e=>console.log\\('SPAWN ERROR:',e.code,e.message\\)\\);\")",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "PowerShell($tools = @\\(\"inkscape\",\"magick\",\"node\",\"npx\",\"sharp\"\\); foreach\\($t in $tools\\){ $r = Get-Command $t -ErrorAction SilentlyContinue; if\\($r\\){ Write-Output \"$t : $\\($r.Source\\)\" } else { Write-Output \"$t : not found\" } })",
+      "Bash(node -e ' *)",
+      "WebFetch(domain:upload.wikimedia.org)",
+      "Bash(mkdir -p \"C:/inetpub/wwwroot/justcanvass-app-marketing/.claude/skills/create-ad-creative\")",
+      "Bash(rmdir \"C:/inetpub/wwwroot/justcanvass-app-marketing/.claude/commands\")",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "Bash(pkill -f \"http.server 8099\")"
     ]
   }
 }

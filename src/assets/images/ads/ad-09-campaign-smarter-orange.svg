@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <rect width="300" height="250" fill="#ffffff"/>
+  <rect width="300" height="5" fill="#e8610a"/>
+  <text x="150" y="76" font-family="'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="900" fill="#1a1a1a" text-anchor="middle">Campaign</text>
+  <text x="150" y="132" font-family="'Helvetica Neue', Arial, sans-serif" font-size="50" font-weight="900" fill="#e8610a" text-anchor="middle">Smarter.</text>
+  <line x1="40" y1="150" x2="260" y2="150" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="150" y="174" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#777" text-anchor="middle">Door-knocking · SMS · Phonebanking · Email</text>
+  <rect x="40" y="196" width="220" height="38" rx="4" fill="#e8610a"/>
+  <text x="150" y="220" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Just Canvass · justcanvass.ca →</text>
+  <rect width="300" height="250" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+</svg>

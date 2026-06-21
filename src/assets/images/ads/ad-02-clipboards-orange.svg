@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <rect width="300" height="250" fill="#ffffff"/>
+  <rect width="300" height="5" fill="#e8610a"/>
+  <text x="150" y="62" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="900" fill="#1a1a1a" text-anchor="middle">Still using</text>
+  <text x="150" y="100" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="900" fill="#e8610a" text-anchor="middle">clipboards?</text>
+  <line x1="40" y1="118" x2="260" y2="118" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="150" y="142" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#555" text-anchor="middle">Real-time turf maps, voter tracking,</text>
+  <text x="150" y="160" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#555" text-anchor="middle">and reporting — from any phone.</text>
+  <rect x="55" y="198" width="190" height="38" rx="4" fill="#e8610a"/>
+  <text x="150" y="221" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Just Canvass · See It In Action →</text>
+  <rect width="300" height="250" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+</svg>

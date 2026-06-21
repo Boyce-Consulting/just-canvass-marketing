@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Canvass – Door-Knocking &amp; Canvassing App for Canadian Municipal Elections</title>
+    <title>Just Canvass – Door-Knocking &amp; Canvassing App for Canada's Municipal Elections</title>
     <meta name="description" content="Door-to-door canvassing app for Canadian municipal elections — plus sign management, phonebanking, text and email campaigns in one place. Email us for a quote and a personal demo.">
     <meta name="keywords" content="door knocking app, door-to-door canvassing app, canvassing app Canada, political canvassing app, municipal election app, GOTV app, phonebanking app, Canadian campaign app, ground game app, door knocking app Ontario, canvassing app British Columbia, canvassing app BC, Manitoba municipal election app, Ontario municipal election app, door knocking app Manitoba">
     <meta name="author" content="Just Canvass">
@@ -16,7 +16,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.justcanvass.ca/">
-    <meta property="og:title" content="Just Canvass – Door-Knocking &amp; Canvassing App for Canadian Municipal Elections">
+    <meta property="og:title" content="Just Canvass – Door-Knocking &amp; Canvassing App for Canada's Municipal Elections">
     <meta property="og:description" content="Door-to-door canvassing app for Canadian municipal elections — plus sign management, phonebanking, text and email campaigns in one place. Email us for a quote and a personal demo.">
     <meta property="og:image" content="https://www.justcanvass.ca/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -28,7 +28,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.justcanvass.ca/">
-    <meta name="twitter:title" content="Just Canvass – Door-Knocking &amp; Canvassing App for Canadian Municipal Elections">
+    <meta name="twitter:title" content="Just Canvass – Door-Knocking &amp; Canvassing App for Canada's Municipal Elections">
     <meta name="twitter:description" content="Door-to-door canvassing app for Canadian municipal elections — plus sign management, phonebanking, text and email campaigns in one place. Email us for a quote and a personal demo.">
     <meta name="twitter:image" content="https://www.justcanvass.ca/og-image.png">
     
@@ -84,6 +84,12 @@
           "name": "Coverage",
           "description": "Active municipal election coverage across British Columbia, Ontario, and Manitoba, with availability across the rest of Canada including Alberta",
           "url": "https://www.justcanvass.ca/#canada-focus"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Get a Quote & Demo",
+          "description": "Request a tailored quote and a personal demo by sharing your name, email, postal code, and the position you're running for",
+          "url": "https://www.justcanvass.ca/#quote"
         }
       ]
     }
@@ -131,11 +137,17 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11HMWC4L0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-M11HMWC4L0');
-    </script>
+      // Reference window.gtag / window.dataLayer on EVERY line. Parcel minifies inline
+      // scripts with terser, which will otherwise localize a `function gtag(){}` (or even
+      // `window.gtag = function(){}` followed by bare `gtag()` calls) into a private var
+      // and DROP the global — so other bundles (main.js) can't see it and every GA event
+      // silently no-ops. Property access on `window` can't be optimized away, so this
+      // keeps gtag truly global.
+      window.gtag = function(){ window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-M11HMWC4L0');
+      window.gtag('config', 'AW-8285196019');
+</script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -258,7 +270,7 @@
                     </div>
                 </div>
                 <div class="cta-buttons">
-                    <a href="mailto:hello@justcanvass.ca?subject=Just%20Canvass%20Quote%20%26%20Demo%20Request&amp;body=District%3A%20%0APosition%3A%20%0A" class="btn btn-primary" data-cta="hero">Get a Quote &amp; Demo</a>
+                    <a href="#quote" id="quote-cta-hero" class="btn btn-primary js-quote-trigger" data-cta="hero">Get a Quote &amp; Demo</a>
                 </div>
             </div>
         </div>
@@ -515,9 +527,9 @@
         <section id="pricing" class="pricing-section">
             <div class="container">
                 <h2>Pricing</h2>
-                <p class="pricing-intro">Every contest is different, so every quote is too. <a href="mailto:hello@justcanvass.ca?subject=Just%20Canvass%20Quote%20%26%20Demo%20Request&amp;body=District%3A%20%0APosition%3A%20%0A" data-cta="pricing-text">Email us</a> for a quote tailored to your district and contest, plus a personal demo.</p>
+                <p class="pricing-intro">Every contest is different, so every quote is too. <a href="#quote" class="js-quote-trigger" data-cta="pricing-text">Tell us about your contest</a> for a quote tailored to your district, plus a personal demo.</p>
                 <div class="pricing-cta">
-                    <a href="mailto:hello@justcanvass.ca?subject=Just%20Canvass%20Quote%20%26%20Demo%20Request&amp;body=District%3A%20%0APosition%3A%20%0A" class="btn btn-primary" data-cta="pricing">Email for a Quote &amp; Demo</a>
+                    <a href="#quote" id="quote-cta-pricing" class="btn btn-primary js-quote-trigger" data-cta="pricing">Email for a Quote &amp; Demo</a>
                     <button type="button" class="copy-email" data-copy="hello@justcanvass.ca" aria-label="Copy email address hello@justcanvass.ca to clipboard">
                         <span class="copy-email__text">hello@justcanvass.ca</span>
                         <svg class="copy-email__icon copy-email__icon--copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -531,6 +543,64 @@
                     </button>
                 </div>
                 <p class="pricing-note">We reply within one business day — no obligation.</p>
+            </div>
+        </section>
+
+        <section id="quote" class="quote-section">
+            <div class="container">
+                <div class="quote-form-wrap" hidden>
+                    <h2>Get a Quote &amp; Demo</h2>
+                    <p class="quote-intro">Tell us about your campaign and we'll send a tailored quote plus a personal demo — usually within one business day.</p>
+                    <form class="quote-form" id="quote-form" novalidate>
+                        <div class="quote-form__row">
+                            <label class="quote-field">
+                                <span class="quote-field__label">Name</span>
+                                <input type="text" name="name" autocomplete="name" required>
+                            </label>
+                            <label class="quote-field">
+                                <span class="quote-field__label">Email</span>
+                                <input type="email" name="email" autocomplete="email"
+                                       inputmode="email" autocapitalize="none" spellcheck="false"
+                                       maxlength="254"
+                                       pattern="[^@\s]+@[^@\s]+\.[^@\s]{2,}"
+                                       title="Enter a valid email address, e.g. name@example.com" required>
+                            </label>
+                        </div>
+                        <div class="quote-form__row">
+                            <label class="quote-field">
+                                <span class="quote-field__label">Postal code</span>
+                                <input type="text" name="postcode" autocomplete="postal-code"
+                                       inputmode="text" autocapitalize="characters" spellcheck="false"
+                                       maxlength="7" placeholder="A1A 1A1"
+                                       pattern="[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] ?\d[ABCEGHJ-NPRSTV-Z]\d"
+                                       title="Enter a valid Canadian postal code, e.g. A1A 1A1" required>
+                            </label>
+                            <label class="quote-field">
+                                <span class="quote-field__label">Position</span>
+                                <select name="position" required>
+                                    <option>Mayor</option>
+                                    <option selected>Council</option>
+                                    <option>Trustee</option>
+                                    <option>Other</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="quote-form__row">
+                            <label class="quote-field">
+                                <span class="quote-field__label">District</span>
+                                <input type="text" name="district" autocomplete="off" placeholder="Ward 3, Milton" required>
+                            </label>
+                        </div>
+                        <!-- Honeypot: hidden from people, bots fill it -->
+                        <div class="quote-form__hp" aria-hidden="true">
+                            <label>Company <input type="text" name="company" tabindex="-1" autocomplete="off"></label>
+                        </div>
+                        <input type="hidden" name="gclid">
+                        <input type="hidden" name="source_url">
+                        <button type="submit" class="btn btn-primary quote-form__submit">Send my request</button>
+                        <p class="quote-form__status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

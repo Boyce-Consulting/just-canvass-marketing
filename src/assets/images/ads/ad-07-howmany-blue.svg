@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <rect width="300" height="250" fill="#1a3570"/>
+  <rect width="300" height="5" fill="#4a90d9"/>
+  <text x="150" y="58" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">How many doors</text>
+  <text x="150" y="92" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">did your team</text>
+  <text x="150" y="126" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="900" fill="#4a90d9" text-anchor="middle">knock today?</text>
+  <line x1="40" y1="144" x2="260" y2="144" stroke="#4a90d9" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="150" y="168" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#8aaad8" text-anchor="middle">Tracks every knock, call &amp; text</text>
+  <text x="150" y="185" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#8aaad8" text-anchor="middle">— automatically.</text>
+  <rect x="40" y="204" width="220" height="38" rx="4" fill="#ffffff"/>
+  <text x="150" y="228" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#1a3570" text-anchor="middle">Just Canvass · See How It Works →</text>
+</svg>

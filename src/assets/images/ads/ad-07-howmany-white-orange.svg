@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <rect width="300" height="250" fill="#ffffff"/>
+  <rect width="300" height="6" fill="#e8610a"/>
+  <text x="260" y="210" font-family="'Helvetica Neue', Arial, sans-serif" font-size="200" font-weight="900" fill="#e8610a" text-anchor="middle" opacity="0.05">?</text>
+  <text x="150" y="62" font-family="'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="900" fill="#1a1a1a" text-anchor="middle">How many doors</text>
+  <text x="150" y="96" font-family="'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="900" fill="#1a1a1a" text-anchor="middle">did your team</text>
+  <text x="150" y="138" font-family="'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" fill="#e8610a" text-anchor="middle">knock today?</text>
+  <rect x="55" y="192" width="190" height="44" rx="4" fill="#e8610a"/>
+  <text x="150" y="219" font-family="'Helvetica Neue', Arial, sans-serif" text-anchor="middle">
+    <tspan font-size="16" font-weight="900" fill="#ffffff">Just Canvass</tspan><tspan font-size="13" font-weight="400" fill="#ffffff"> →</tspan>
+  </text>
+  <rect width="300" height="250" fill="none" stroke="#e8e8e8" stroke-width="1"/>
+</svg>

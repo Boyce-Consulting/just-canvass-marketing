@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="250" viewBox="0 0 300 250">
+  <rect width="300" height="250" fill="#ffffff"/>
+  <rect width="300" height="5" fill="#e8610a"/>
+  <text x="150" y="68" font-family="'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="900" fill="#1a1a1a" text-anchor="middle">Win More</text>
+  <text x="150" y="114" font-family="'Helvetica Neue', Arial, sans-serif" font-size="40" font-weight="900" fill="#e8610a" text-anchor="middle">Doors.</text>
+  <line x1="40" y1="130" x2="260" y2="130" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="150" y="154" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#777" text-anchor="middle">Canvassing software for Canadian</text>
+  <text x="150" y="171" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" fill="#777" text-anchor="middle">municipal campaigns.</text>
+  <rect x="65" y="190" width="170" height="38" rx="4" fill="#e8610a"/>
+  <text x="150" y="214" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">Just Canvass · Get a Free Demo →</text>
+  <rect width="300" height="250" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+</svg>
