@@ -69,8 +69,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Estimated value of a submitted quote request — used for value-based bidding
-    // on the "sale" tier. Set this to your real average lead value (CAD).
-    const LEAD_VALUE = 1.0;
+    // on the "sale" tier. Real average lead value (CAD): ~avg customer value ×
+    // lead-to-customer close rate. Revisit as conversion data accrues.
+    const LEAD_VALUE = 100;
 
     // --- Tier 2 — ACTIVE INTEREST: form opened (fires at most once per page load) ---
     // Meta custom event + GA "lead start". Mark generate_lead_start as a SECONDARY
@@ -154,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
           transaction_id: eventId
         });
         // Google Ads PRIMARY conversion — replace AW-…/LABEL with your real conversion label:
-        // gtag('event', 'conversion', { send_to: 'AW-8285196019/XXXXXXXX', value: LEAD_VALUE, currency: 'CAD', transaction_id: eventId });
+        // gtag('event', 'conversion', { send_to: 'AW-1742065915/XXXXXXXX', value: LEAD_VALUE, currency: 'CAD', transaction_id: eventId });
       }
 
       if (typeof fbq === 'function') {

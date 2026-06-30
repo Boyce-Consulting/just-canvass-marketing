@@ -1,10 +1,10 @@
 # Just Canvass
 
-> Just Canvass is a door-to-door canvassing and door-knocking app built in Canada for Canadian municipal election campaigns. Door knocking is its core: real-time mapping, instant sync, and live team tracking as canvassers knock. It also gives independent candidates, slates, and local campaigns the same broader ground-game tools as major political parties — phonebanking, text blasts, email campaigns, robocalls, sign management, GOTV, and real-time analytics — all in one platform. Districts and voter data are pre-loaded across Canada: British Columbia, Ontario, and Manitoba are in their active general municipal election cycle, while Alberta and other provinces are available for by-elections, candidate organizing, and upcoming municipal cycles.
+> Just Canvass is canvassing software and a door-to-door door-knocking app — political campaign software built in Canada for Canadian municipal election campaigns. Door knocking is its core: real-time mapping, instant sync, and live team tracking as canvassers knock. It also gives independent candidates, slates, and local campaigns the same broader ground-game tools as major political parties — phonebanking, text blasts, email campaigns, robocalls, sign management, GOTV, and real-time analytics — all in one platform. Districts and voter data are pre-loaded across Canada: British Columbia, Ontario, and Manitoba are in their active general municipal election cycle, while Alberta and other provinces are available for by-elections, candidate organizing, and upcoming municipal cycles.
 
 Key facts:
 
-- Product: web, iOS, and Android door-knocking and canvassing app for political campaigns at app.justcanvass.ca
+- Product: web, iOS, and Android canvassing software and door-knocking app — political campaign software for political campaigns at app.justcanvass.ca
 - Best for: candidates and campaigns that want a focused door-knocking / door-to-door canvassing app and the option to run phone, text, email, and GOTV from the same place
 - Made for: Canadian municipal elections (mayor, council, school board trustee), including the 2026 municipal election cycle; supports single candidates and multi-candidate slates
 - Coverage: pre-loaded electoral districts across Canada — British Columbia, Ontario, and Manitoba are in their active general municipal election cycle right now; Alberta and additional provinces are available for by-elections, candidate organizing, petitions, and upcoming municipal cycles. Campaigns do not need to bring their own voter list to get started

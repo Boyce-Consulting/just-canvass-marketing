@@ -67,7 +67,11 @@
       "Bash(mkdir -p \"C:/inetpub/wwwroot/justcanvass-app-marketing/.claude/skills/create-ad-creative\")",
       "Bash(rmdir \"C:/inetpub/wwwroot/justcanvass-app-marketing/.claude/commands\")",
       "mcp__plugin_playwright_playwright__browser_console_messages",
-      "Bash(pkill -f \"http.server 8099\")"
+      "Bash(pkill -f \"http.server 8099\")",
+      "Bash(rm -f quote-shadow-check.png)",
+      "Bash(node *)",
+      "mcp__plugin_playwright_playwright__browser_network_requests",
+      "mcp__plugin_playwright_playwright__browser_wait_for"
     ]
   }
 }

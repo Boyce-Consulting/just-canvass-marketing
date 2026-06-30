@@ -776,16 +776,6 @@
 }
 
 // Feature pricing subtext
-.feature-pricing {
-  list-style: none;
-  padding: 0 !important;
-  margin: 0.5rem 0 0 !important;
-  font-size: 0.72rem;
-  color: #999;
-  line-height: 1.6;
-  font-style: italic;
-}
-
 // Integrations section
 .integrations-section {
   background-color: #ffffff;
@@ -872,6 +862,67 @@
     a {
       color: $primary-color;
       font-weight: 600;
+    }
+  }
+
+  .pricing-rates {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    max-width: 900px;
+    margin: 3rem auto 0;
+
+    @media (max-width: $breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 420px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .rate-card {
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 12px;
+    padding: 1.75rem 1rem;
+    text-align: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: rgba($primary-color, 0.4);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    &__label {
+      margin: 0 0 0.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    &__price {
+      margin: 0;
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 1.1;
+      color: $primary-color;
+    }
+
+    &__currency {
+      font-size: 1.25rem;
+      font-weight: 600;
+      vertical-align: super;
+      margin-right: 0.1em;
+    }
+
+    &__unit {
+      margin: 0.5rem 0 0;
+      font-size: 0.95rem;
+      color: #777;
     }
   }
 
@@ -1712,17 +1763,20 @@
   // here (not on the section) so it appears with the content.
   .quote-form-wrap {
     overflow: hidden;
-    max-width: 640px;
+    // max-width includes the 2rem side padding below, so the form card stays ~640px wide
+    max-width: 704px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 2rem;
     opacity: 0;
     max-height: 0;
     transition: opacity 0.4s ease, max-height 0.5s ease, padding 0.5s ease;
 
+    // Horizontal padding gives the card's box-shadow room before the overflow:hidden
+    // clip edge, so the elevation shadow isn't cut off on the left and right.
     &.is-open {
       opacity: 1;
       max-height: 1100px;
-      padding: 5rem 0;
+      padding: 5rem 2rem;
     }
   }
 
