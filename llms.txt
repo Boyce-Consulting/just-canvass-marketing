@@ -22,7 +22,13 @@ Key facts:
 - [Integrations](https://www.justcanvass.ca/#integrations): platforms Just Canvass connects with
 - [Pricing](https://www.justcanvass.ca/#pricing): how custom campaign quotes work and how to request one
 - [Get a Quote & Demo](https://www.justcanvass.ca/#quote): request form for a tailored quote and personal demo (name, email, postal code, position)
+- [Best Canvassing Apps for Canadian Campaigns](https://www.justcanvass.ca/best-canvassing-app/): honest 2026 comparison of the best canvassing apps for Canadian municipal campaigns — Just Canvass vs Ecanvasser, Qomon, and Campaign Knock — with a side-by-side feature table and FAQ; NationBuilder and CallHub noted as complementary (non-canvassing) integration partners
 - [Campaign app login](https://app.justcanvass.ca/): sign in to the Just Canvass campaign dashboard
+
+## Help
+
+- [Help Centre](https://www.justcanvass.ca/help/): how-to guides for getting the most out of Just Canvass
+- [Setting up email](https://www.justcanvass.ca/help/setting-up-email.html): connect your campaign domain, add the DNS records (DKIM + Return-Path CNAMEs), verify it for deliverability, and stay compliant with Canada's anti-spam law (CASL)
 
 ## Policies
 

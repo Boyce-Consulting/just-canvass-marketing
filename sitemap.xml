@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.justcanvass.ca/</loc>
-        <lastmod>2026-06-21</lastmod>
+        <lastmod>2026-07-05</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.justcanvass.ca/best-canvassing-app/</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.justcanvass.ca/help/</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.justcanvass.ca/help/setting-up-email.html</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://www.justcanvass.ca/policies/privacy-policy.html</loc>
