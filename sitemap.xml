@@ -13,6 +13,18 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://www.justcanvass.ca/blog/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.justcanvass.ca/blog/2026-canadian-municipal-election-dates/</loc>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://www.justcanvass.ca/help/</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>monthly</changefreq>

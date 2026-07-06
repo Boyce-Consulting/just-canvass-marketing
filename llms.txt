@@ -25,6 +25,11 @@ Key facts:
 - [Best Canvassing Apps for Canadian Campaigns](https://www.justcanvass.ca/best-canvassing-app/): honest 2026 comparison of the best canvassing apps for Canadian municipal campaigns — Just Canvass vs Ecanvasser, Qomon, and Campaign Knock — with a side-by-side feature table and FAQ; NationBuilder and CallHub noted as complementary (non-canvassing) integration partners
 - [Campaign app login](https://app.justcanvass.ca/): sign in to the Just Canvass campaign dashboard
 
+## Blog
+
+- [Blog & Campaign Guides](https://www.justcanvass.ca/blog/): guides and resources for Canadian municipal campaigns — election dates, canvassing how-tos, compliance, and GOTV
+- [2026 Canadian Municipal Election Dates & Deadlines](https://www.justcanvass.ca/blog/2026-canadian-municipal-election-dates/): election day, nomination periods, filing deadlines and fees for the 2026 municipal elections in Ontario (Oct 26), British Columbia (Oct 17) and Manitoba (Oct 28), plus a candidate campaign timeline
+
 ## Help
 
 - [Help Centre](https://www.justcanvass.ca/help/): how-to guides for getting the most out of Just Canvass
