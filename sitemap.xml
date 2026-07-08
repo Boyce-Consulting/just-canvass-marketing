@@ -25,6 +25,24 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://www.justcanvass.ca/blog/2026-ontario-municipal-election/</loc>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.justcanvass.ca/blog/2026-bc-municipal-election/</loc>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.justcanvass.ca/blog/2026-manitoba-municipal-election/</loc>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://www.justcanvass.ca/blog/2025-alberta-municipal-election-dates/</loc>
         <lastmod>2026-07-08</lastmod>
         <changefreq>monthly</changefreq>
