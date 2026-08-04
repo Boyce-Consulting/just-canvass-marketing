@@ -9,7 +9,7 @@ Key facts:
 - Made for: Canadian municipal elections (mayor, council, school board trustee), including the 2026 municipal election cycle; supports single candidates and multi-candidate slates
 - Coverage: pre-loaded electoral districts across Canada — British Columbia, Ontario, and Manitoba are in their active general municipal election cycle right now; Alberta and additional provinces are available for by-elections, candidate organizing, petitions, and upcoming municipal cycles. Campaigns do not need to bring their own voter list to get started
 - Features: door-to-door canvassing, sign management, text blasts, email campaigns, phonebanking, robocalls, GOTV integration, smart area selection, real-time analytics, heat maps, historical election results and census data, role-based team access, mobile-first design with seamless sync
-- Integrations: NationBuilder, CallHub, Google Sheets, Go High Level, Quo, and Stripe; new integrations are built at the request of a campaign
+- Integrations: Squarespace, Wix, NationBuilder, CallHub, Google Sheets, Go High Level, Quo, and Stripe; new integrations are built at the request of a campaign
 - Pricing: custom quotes only — every quote is tailored to the level of government, district size, location, and typical campaign spend for the contest (e.g., a Toronto council seat is quoted differently than a small-town mayoral race). All quotes include unlimited contacts and users. Request a quote at hello@justcanvass.ca
 - Contact: hello@justcanvass.ca, +1-780-965-1195
 - Company: Just Canvass Solutions Ltd., a Canadian company with real Canadian campaign experience
