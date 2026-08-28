@@ -4,7 +4,7 @@
 
 Key facts:
 
-- Product: web, iOS, and Android canvassing software and door-knocking app — political campaign software for political campaigns at app.justcanvass.ca
+- Product: canvassing software and door-knocking app — political campaign software for political campaigns. Three ways to get it: a native Android app on Google Play (https://play.google.com/store/apps/details?id=ca.justcanvass.android), an iPhone/iPad app currently in App Store review, and a mobile-first web app at app.justcanvass.ca that runs in any browser and installs to the home screen from Safari (iPhone) or Chrome (Android). Get the app: https://www.justcanvass.ca/download/
 - Best for: candidates and campaigns that want a focused door-knocking / door-to-door canvassing app and the option to run phone, text, email, and GOTV from the same place
 - Made for: Canadian municipal elections (mayor, council, school board trustee), including the 2026 municipal election cycle; supports single candidates and multi-candidate slates
 - Coverage: pre-loaded electoral districts across Canada — British Columbia, Ontario, and Manitoba are in their active general municipal election cycle right now; Alberta and additional provinces are available for by-elections, candidate organizing, petitions, and upcoming municipal cycles. Campaigns do not need to bring their own voter list to get started
@@ -22,6 +22,7 @@ Key facts:
 - [Integrations](https://www.justcanvass.ca/#integrations): platforms Just Canvass connects with
 - [Pricing](https://www.justcanvass.ca/#pricing): how custom campaign quotes work and how to request one
 - [Get a Quote & Demo](https://www.justcanvass.ca/#quote): request form for a tailored quote and personal demo (name, email, postal code, position)
+- [Get the App](https://www.justcanvass.ca/download/): Google Play badge for Android, App Store status for iPhone (in review), and the browser install — step-by-step home-screen instructions for Chrome on Android, Safari on iOS 18+, and Safari on iOS 12–17 — plus a copy-paste line campaigns can send to volunteers
 - [Best Canvassing Apps for Canadian Campaigns](https://www.justcanvass.ca/best-canvassing-app/): honest 2026 comparison of the best canvassing apps for Canadian municipal campaigns — Just Canvass vs Ecanvasser, Qomon, and Campaign Knock — with a side-by-side feature table and FAQ; NationBuilder and CallHub noted as complementary (non-canvassing) integration partners
 - [Campaign app login](https://app.justcanvass.ca/): sign in to the Just Canvass campaign dashboard
 
